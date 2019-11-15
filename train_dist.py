@@ -93,15 +93,16 @@ def partition_dataset():
     return train_set, bsz
 
 
-def average_gradients(model):
+def average_gradients(model,group):
     """ Gradient averaging. """
     size = float(dist.get_world_size())
     for param in model.parameters():
-        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=dist.new_group([0,1]))
+        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group)
         param.grad.data /= size
+        print (param.grad.data)
 
 
-def run(rank, size):
+def run(rank, size, group):
     """ Distributed Synchronous SGD Example """
     device = torch.device("cuda:{}".format(0))
     torch.manual_seed(1234)
@@ -123,7 +124,7 @@ def run(rank, size):
             loss = F.nll_loss(output, target)
             epoch_loss += 1 #loss.data[0]
             loss.backward()
-            average_gradients(model)
+            average_gradients(model,group)
             optimizer.step()
         print('Rank ',
               dist.get_rank(), ', epoch ', epoch, ': ',
@@ -144,7 +145,8 @@ if __name__ == "__main__":
     rank = sys.argv[1]
     size = 2
     dist.init_process_group('nccl', rank=rank, world_size=2)
-    run(rank, size)
+    group = dist.new_group([0,1])
+    run(rank, size, group)
 
 
    
