@@ -97,7 +97,7 @@ def average_gradients(model):
     """ Gradient averaging. """
     size = float(dist.get_world_size())
     for param in model.parameters():
-        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=0)
+        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=dist.new_group([0,1]))
         param.grad.data /= size
 
 
@@ -119,7 +119,7 @@ def run(rank, size):
             optimizer.zero_grad()
             output = model(data)
             loss = F.nll_loss(output, target)
-            epoch_loss += loss.data[0]
+            epoch_loss += 1 #loss.data[0]
             loss.backward()
             average_gradients(model)
             optimizer.step()
