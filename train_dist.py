@@ -138,12 +138,12 @@ if __name__ == "__main__":
     os.environ["MASTER_ADDR"] = sys.argv[2]
     os.environ["WORLD_SIZE"] = '2'
     os.environ["RANK"] =sys.argv[1]
-    os.environ["NCCL_SOCKET_IFNAME"]="eth0"
-    os.environ["NCCL_DEBUG"]="WARN"
-    os.environ["NCCL_DEBUG_SUBSYS"]="ALL"
+    os.environ["GLOO_SOCKET_IFNAME"]="eth0"
+    os.environ["GLOO_DEBUG"]="WARN"
+    os.environ["GLOO_DEBUG_SUBSYS"]="ALL"
     rank = sys.argv[1]
     size = 2
-    dist.init_process_group('nccl', rank=rank, world_size=2)
+    dist.init_process_group('gloo', rank=rank, world_size=2)
     run(rank, size)
 
 
