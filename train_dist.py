@@ -139,7 +139,8 @@ if __name__ == "__main__":
     os.environ["WORLD_SIZE"] = '2'
     os.environ["RANK"] =sys.argv[1]
     os.environ["NCCL_SOCKET_IFNAME"]="eth0"
-    os.envroin["NCCL_DEBUG"]="INFO"
+    os.environ["NCCL_DEBUG"]="INFO"
+    os.environ["NCCL_DEBUG_SUBSYS"]="ALL"
     rank = sys.argv[1]
     size = 2
     dist.init_process_group('nccl', rank=rank, world_size=2)
