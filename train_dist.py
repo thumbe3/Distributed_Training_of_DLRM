@@ -136,8 +136,9 @@ if __name__ == "__main__":
     os.environ["MASTER_ADDR"] = sys.argv[2]
     os.environ["WORLD_SIZE"] = '2'
     os.environ["RANK"] =sys.argv[1]
-
-    dist.init_process_group('nccl', rank=sys.argv[1], world_size=2)
+    rank = sys.argv[1]
+    size = 2
+    dist.init_process_group('nccl', rank=rank, world_size=2)
     run(rank, size)
 
 
