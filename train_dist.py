@@ -103,9 +103,10 @@ def average_gradients(model):
 
 def run(rank, size):
     """ Distributed Synchronous SGD Example """
+    device = torch.device("cuda:{}".format(0))
     torch.manual_seed(1234)
     train_set, bsz = partition_dataset()
-    model = Net()
+    model = Net().to(device)
     model = model
 #    model = model.cuda(rank)
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)
@@ -114,6 +115,7 @@ def run(rank, size):
     for epoch in range(10):
         epoch_loss = 0.0
         for data, target in train_set:
+            data, target = data.to(device), target.to(device)
             data, target = Variable(data), Variable(target)
 #            data, target = Variable(data.cuda(rank)), Variable(target.cuda(rank))
             optimizer.zero_grad()
