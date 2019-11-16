@@ -85,6 +85,43 @@ from torch.nn.parallel.scatter_gather import gather, scatter
 exc = getattr(builtins, "IOError", "FileNotFoundError")
 
 
+#########  data partitioner #############################
+class Partition(object):
+    """ Dataset-like object, but only access a subset of it. """
+
+    def __init__(self, data, index):
+        self.data = data
+        self.index = index
+
+    def __len__(self):
+        return len(self.index)
+
+    def __getitem__(self, index):
+        data_idx = self.index[index]
+        return self.data[data_idx]
+
+
+class DataPartitioner(object):
+    """ Partitions a dataset into different chuncks. """
+
+    def __init__(self, data, sizes=[0.7, 0.2, 0.1], seed=1234):
+        self.data = data
+        self.partitions = []
+        rng = Random()
+        rng.seed(seed)
+        data_len = len(data)
+        indexes = [x for x in range(0, data_len)]
+        rng.shuffle(indexes)
+
+        for frac in sizes:
+            part_len = int(frac * data_len)
+            self.partitions.append(indexes[0:part_len])
+            indexes = indexes[part_len:]
+
+    def use(self, partition):
+        return Partition(self.data, self.partitions[partition])
+
+
 ### define dlrm in PyTorch ###
 class DLRM_Net(nn.Module):
     def create_mlp(self, ln, sigmoid_layer):
@@ -391,6 +428,16 @@ class DLRM_Net(nn.Module):
             z0 = p0
 
         return z0
+    
+def partition_dataset(train_dataset, args):
+    """ Partitioning MNIST """
+    dataset = train_dataset
+    size = dist.get_world_size()
+    partition_sizes = [1.0 / size for _ in range(size)]
+    partition = DataPartitioner(dataset, partition_sizes)
+    partition = partition.use(dist.get_rank())
+    return partition
+
 
 
 def average_gradients(dlrm, group):
@@ -535,9 +582,11 @@ if __name__ == "__main__":
             args.processed_data_file,
             args.memory_map
         )
+        
+        train_data = partition_dataset(train_data, args)
         train_loader = torch.utils.data.DataLoader(
             train_data,
-            batch_size=args.mini_batch_size,
+            batch_size=int(args.mini_batch_size / float(size)),
             shuffle=False,
             num_workers=args.num_workers,
             collate_fn=collate_wrapper,
@@ -556,9 +605,10 @@ if __name__ == "__main__":
             args.processed_data_file,
             args.memory_map
         )
+        test_data = partition_dataset(test_data, args)
         test_loader = torch.utils.data.DataLoader(
             test_data,
-            batch_size=args.mini_batch_size,
+            batch_size=int(args.mini_batch_size / float(size)),
             shuffle=False,
             num_workers=args.num_workers,
             collate_fn=collate_wrapper,
@@ -607,6 +657,7 @@ if __name__ == "__main__":
             reset_seed_on_access=True,
             rand_seed=args.numpy_rand_seed
         )  # WARNING: generates a batch of lookups at once
+        train_data = partition_dataset(train_data, args)
         train_loader = torch.utils.data.DataLoader(
             train_data,
             batch_size=1,
