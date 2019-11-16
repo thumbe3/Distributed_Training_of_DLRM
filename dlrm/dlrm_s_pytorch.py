@@ -396,7 +396,8 @@ class DLRM_Net(nn.Module):
 def average_gradients(dlrm, group):
     size = float(dist.get_world_size())
     for name,param in dlrm.named_parameters():
-        print(name,param.device)
+        if 'emb_l' in name:
+            continue
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group)
         param.grad.data /= size
         print (param.grad.data)
