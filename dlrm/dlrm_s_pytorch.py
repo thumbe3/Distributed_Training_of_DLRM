@@ -459,6 +459,8 @@ if __name__ == "__main__":
     parser.add_argument("--debug-mode", action="store_true", default=False)
     parser.add_argument("--enable-profiling", action="store_true", default=False)
     parser.add_argument("--plot-compute-graph", action="store_true", default=False)
+    parser.add_argument("--rank", type=str, default="0")
+    parser.add_argument("--master_ip", type=str, default="10.138.0.18")
 
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
