@@ -61,6 +61,7 @@ import time
 
 # data generation
 import dlrm_data_pytorch as dp
+import torch.distributed as dist
 
 # numpy
 import numpy as np
@@ -394,7 +395,8 @@ class DLRM_Net(nn.Module):
 
 def average_gradients(dlrm, group):
     size = float(dist.get_world_size())
-    for param in dlrm.parameters():
+    for name,param in dlrm.named_parameters():
+        print(name,param.device)
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group)
         param.grad.data /= size
         print (param.grad.data)
@@ -468,13 +470,13 @@ if __name__ == "__main__":
 
     # environment intialixztion for dest training
     os.environ["MASTER_PORT"] = "8888"
-    os.environ["MASTER_ADDR"] = sys.argv[3]
+    os.environ["MASTER_ADDR"] = args.master_ip
     os.environ["WORLD_SIZE"] = '2'
-    os.environ["RANK"] =sys.argv[1]
+    os.environ["RANK"] =args.rank
     os.environ["NCCL_SOCKET_IFNAME"]="eth0"
     os.environ["NCCL_DEBUG"]="WARN"
     os.environ["NCCL_DEBUG_SUBSYS"]="ALL"
-    rank = sys.argv[2]
+    rank = args.rank
     size = 2
     dist.init_process_group('nccl', rank=rank, world_size=2)
     group = dist.new_group([0,1])
