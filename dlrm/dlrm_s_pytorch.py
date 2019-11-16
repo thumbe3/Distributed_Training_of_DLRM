@@ -445,10 +445,11 @@ def average_gradients(dlrm, group):
     size = float(dist.get_world_size())
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
+            print(param.data)
             continue
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group)
         param.grad.data /= size
-        print (param.grad.data)
+        #print (param.grad.data)
 
 if __name__ == "__main__":
     ### import packages ###
