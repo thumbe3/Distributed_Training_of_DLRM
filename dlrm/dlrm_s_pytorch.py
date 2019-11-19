@@ -748,6 +748,7 @@ if __name__ == "__main__":
         print(ln_emb)
 
         print("data (inputs and targets):")
+        print(len(train_loader))
         for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
             # early exit if nbatches was set by the user and has been exceeded
             if j >= nbatches:
