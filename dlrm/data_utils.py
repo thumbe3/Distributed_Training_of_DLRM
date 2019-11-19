@@ -916,6 +916,7 @@ def getCriteoAdData(
             # Each line in the file is a sample, consisting of 13 continuous and
             # 26 categorical features (an extra space indicates that feature is
             # missing and will be interpreted as 0).
+            print(datafile)
             if path.exists(datafile):
                 print("Reading data from path=%s" % (datafile))
                 with open(str(datafile)) as f:
