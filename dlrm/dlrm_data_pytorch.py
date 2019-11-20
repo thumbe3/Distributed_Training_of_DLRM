@@ -182,6 +182,7 @@ class CriteoDataset(Dataset):
             print("Sparse features= %d, Dense features= %d" % (self.n_emb, self.m_den))
         else:
             # load and preprocess data
+            print(file)
             with np.load(file) as data:
                 X_int = data["X_int"]  # continuous  feature
                 X_cat = data["X_cat"]  # categorical feature
