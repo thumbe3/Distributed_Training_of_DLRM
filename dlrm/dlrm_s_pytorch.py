@@ -879,6 +879,7 @@ if __name__ == "__main__":
         )
 
     print("time/loss/accuracy (if enabled):")
+    start_time = time.time()
     with torch.autograd.profiler.profile(args.enable_profiling, use_gpu) as prof:
         while k < args.nepochs:
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
@@ -955,8 +956,8 @@ if __name__ == "__main__":
 
                     str_run_type = "inference" if args.inference_only else "training"
                     print(
-                        "Finished {} it {}/{} of epoch {}, ".format(
-                            str_run_type, j + 1, nbatches, k
+                        "Finished {} it {}/{} of epoch {} and time taken {}, ".format(
+                            str_run_type, j + 1, nbatches, k, (time.time()-start_time)/1000
                         )
                         + "{:.2f} ms/it, loss {:.6f}, accuracy {:3.3f} %".format(
                             gT, gL, gA * 100
