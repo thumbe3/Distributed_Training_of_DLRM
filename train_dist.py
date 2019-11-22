@@ -93,6 +93,7 @@ def partition_dataset():
     return train_set, bsz
 
 count =0
+temp=torch.Tensor([0])
 def average_gradients(model,group):
     """ Gradient averaging. """
     size = float(dist.get_world_size())
@@ -100,6 +101,8 @@ def average_gradients(model,group):
         print("Number of average gardients computed".format(count))
         print(param.data)
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group, async_op=True)
+        dist.all_reduce(temp, op=dist.reduce_op.MAX, group, async_op=True)
+        print("Temp is {}".format(temp.data))
         param.grad.data /= size
         print (param.grad.data)
         coount+-=1
