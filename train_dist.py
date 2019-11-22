@@ -92,14 +92,17 @@ def partition_dataset():
         partition, batch_size=bsz, shuffle=True)
     return train_set, bsz
 
-
+count =0
 def average_gradients(model,group):
     """ Gradient averaging. """
     size = float(dist.get_world_size())
     for param in model.parameters():
-        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group)
+        print("Number of average gardients computed".format(count))
+        print(param.data)
+        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group, async_op=True)
         param.grad.data /= size
         print (param.grad.data)
+        coount+-=1
 
 
 def run(rank, size, group):
