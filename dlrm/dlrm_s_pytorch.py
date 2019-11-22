@@ -441,13 +441,13 @@ def partition_dataset(train_dataset, args):
 
 
 
-def average_gradients(dlrm, group):
+def average_gradients(dlrm, group, async_op):
     size = float(dist.get_world_size())
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
             print(param.data)
             continue
-        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group)
+        dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group, async_op=async_op)
         param.grad.data /= size
         #print (param.grad.data)
 
@@ -513,7 +513,7 @@ if __name__ == "__main__":
     parser.add_argument("--plot-compute-graph", action="store_true", default=False)
     parser.add_argument("--rank", type=str, default="0")
     parser.add_argument("--master_ip", type=str, default="10.138.0.18")
-
+    parser.add_argument("--async-mode", action="store_true", default=False)
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
     args = parser.parse_args()
@@ -920,7 +920,7 @@ if __name__ == "__main__":
                     optimizer.zero_grad()
                     # backward pass
                     E.backward()
-                    average_gradients(dlrm,group)
+                    average_gradients(dlrm,group, args.async_mode)
 
                     # debug prints (check gradient norm)
                     # for l in mlp.layers:
