@@ -505,7 +505,7 @@ if __name__ == "__main__":
     parser.add_argument("--print-precision", type=int, default=5)
     parser.add_argument("--numpy-rand-seed", type=int, default=123)
     parser.add_argument("--sync-dense-params", type=bool, default=True)
-    parser.add_argument("--data-partition",action="store_true", default=False)
+    parser.add_argument("--data-partition",type=bool, default=False)
     # inference
     parser.add_argument("--inference-only", action="store_true", default=False)
     # onnx
@@ -521,7 +521,7 @@ if __name__ == "__main__":
     parser.add_argument("--plot-compute-graph", action="store_true", default=False)
     parser.add_argument("--rank", type=str, default="0")
     parser.add_argument("--master_ip", type=str, default="10.138.0.18")
-    parser.add_argument("--async-mode", action="store_true", default=False)
+    parser.add_argument("--async-mode", type=bool, default=False)
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
     args = parser.parse_args()
@@ -894,7 +894,7 @@ if __name__ == "__main__":
         while k < args.nepochs:
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 # early exit if nbatches was set by the user and has been exceeded
-                if j >= nbatches:
+                if j >= 10000:
                     break
                 '''
                 # debug prints
