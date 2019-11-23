@@ -588,7 +588,7 @@ if __name__ == "__main__":
         #train_data = partition_dataset(train_data, args)
         train_loader = torch.utils.data.DataLoader(
             train_data,
-            batch_size=int(args.mini_batch_size / float(size)),
+            batch_size=int(args.mini_batch_size),
             shuffle=False,
             num_workers=args.num_workers,
             collate_fn=collate_wrapper,
@@ -610,7 +610,7 @@ if __name__ == "__main__":
         #test_data = partition_dataset(test_data, args)
         test_loader = torch.utils.data.DataLoader(
             test_data,
-            batch_size=int(args.mini_batch_size / float(size)),
+            batch_size=int(args.mini_batch_size),
             shuffle=False,
             num_workers=args.num_workers,
             collate_fn=collate_wrapper,
