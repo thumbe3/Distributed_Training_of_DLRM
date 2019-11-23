@@ -894,7 +894,7 @@ if __name__ == "__main__":
         while k < args.nepochs:
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 # early exit if nbatches was set by the user and has been exceeded
-                if j >= 10000:
+                if j >= int(10000*128/args.mini_batch_size):
                     break
                 '''
                 # debug prints
