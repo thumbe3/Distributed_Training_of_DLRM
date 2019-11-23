@@ -93,7 +93,8 @@ class Partition(object):
     def __init__(self, data, index):
         self.data = data
         self.index = index
-
+    def count(self):
+        return self.data.count
     def __len__(self):
         return len(self.index)
 
