@@ -95,7 +95,7 @@ class Partition(object):
         self.index = index
     @property
     def counts(self):
-        return self.data.count
+        return self.data.counts
 
     @property
     def m_den(self):
