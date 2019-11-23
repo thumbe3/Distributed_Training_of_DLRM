@@ -93,19 +93,19 @@ def partition_dataset():
     return train_set, bsz
 
 count =0
-temp=torch.Tensor([0])
-def average_gradients(model,group):
+def average_gradients(model,group,temp):
     """ Gradient averaging. """
+    global count
     size = float(dist.get_world_size())
     for param in model.parameters():
         print("Number of average gardients computed".format(count))
         print(param.data)
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group, async_op=True)
-        dist.all_reduce(temp, op=dist.reduce_op.MAX, group, async_op=True)
+        dist.all_reduce(temp, op=dist.reduce_op.MAX, group=group, async_op=True)
         print("Temp is {}".format(temp.data))
         param.grad.data /= size
         print (param.grad.data)
-        coount+-=1
+        count+=1
 
 
 def run(rank, size, group):
@@ -118,6 +118,7 @@ def run(rank, size, group):
 #    model = model.cuda(rank)
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)
 
+    temp=torch.Tensor([1]).to(device)
     num_batches = ceil(len(train_set.dataset) / float(bsz))
     for epoch in range(10):
         epoch_loss = 0.0
@@ -130,7 +131,7 @@ def run(rank, size, group):
             loss = F.nll_loss(output, target)
             epoch_loss += 1 #loss.data[0]
             loss.backward()
-            average_gradients(model,group)
+            average_gradients(model,group,temp)
             optimizer.step()
         print('Rank ',
               dist.get_rank(), ', epoch ', epoch, ': ',
