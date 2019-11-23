@@ -585,7 +585,7 @@ if __name__ == "__main__":
             args.memory_map
         )
         
-        #train_data = partition_dataset(train_data, args)
+        train_data = partition_dataset(train_data, args)
         train_loader = torch.utils.data.DataLoader(
             train_data,
             batch_size=int(args.mini_batch_size),
@@ -607,7 +607,7 @@ if __name__ == "__main__":
             args.processed_data_file,
             args.memory_map
         )
-        #test_data = partition_dataset(test_data, args)
+        test_data = partition_dataset(test_data, args)
         test_loader = torch.utils.data.DataLoader(
             test_data,
             batch_size=int(args.mini_batch_size),
@@ -659,7 +659,7 @@ if __name__ == "__main__":
             reset_seed_on_access=True,
             rand_seed=args.numpy_rand_seed
         )  # WARNING: generates a batch of lookups at once
-        #train_data = partition_dataset(train_data, args)
+        train_data = partition_dataset(train_data, args)
         train_loader = torch.utils.data.DataLoader(
             train_data,
             batch_size=1,
