@@ -979,7 +979,7 @@ if __name__ == "__main__":
                 if print_ts and not args.inference_only:
                     test_accu = 0
                     test_loss = 0
-
+                    print("Starting Test loop")
                     for jt, (X_test, lS_o_test, lS_i_test, T_test) in enumerate(test_loader):
                         # early exit if nbatches was set by the user and was exceeded
                         if jt >= nbatches:
@@ -1010,7 +1010,7 @@ if __name__ == "__main__":
 
                         test_accu += A_test
                         test_loss += L_test
-
+                    print("Test loop ended")
                     gL_test = test_loss / nbatches_test
                     gA_test = test_accu / nbatches_test
 
