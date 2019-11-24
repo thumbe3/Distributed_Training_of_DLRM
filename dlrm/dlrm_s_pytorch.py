@@ -452,7 +452,7 @@ def average_gradients(dlrm, group, async_op):
     size = float(dist.get_world_size())
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
-            print(param.data)
+            #print(param.data)
             continue
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group, async_op=async_op)
         param.grad.data /= size
