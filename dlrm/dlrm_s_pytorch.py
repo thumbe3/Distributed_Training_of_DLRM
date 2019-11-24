@@ -1044,7 +1044,7 @@ if __name__ == "__main__":
                             gL_test, gA_test * 100, best_gA_test * 100
                         )
                     )
-
+            print('Finished epoch {}'.format(k))
             k += 1  # nepochs
 
     # profiling
