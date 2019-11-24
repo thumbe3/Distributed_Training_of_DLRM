@@ -530,11 +530,11 @@ if __name__ == "__main__":
     os.environ["MASTER_PORT"] = "8888"
     os.environ["MASTER_ADDR"] = args.master_ip
     os.environ["WORLD_SIZE"] = '2'
-    os.environ["RANK"] =args.rank
-    os.environ["NCCL_SOCKET_IFNAME"]="eth0"
+    os.environ["RANK"] = args.rank
+    os.environ["NCCL_SOCKET_IFNAME"]="enp9s0f0"
     os.environ["NCCL_DEBUG"]="WARN"
     os.environ["NCCL_DEBUG_SUBSYS"]="ALL"
-    rank = args.rank
+    rank = int(args.rank)
     size = 2
     dist.init_process_group('nccl', rank=rank, world_size=2)
     group = dist.new_group([0,1])
