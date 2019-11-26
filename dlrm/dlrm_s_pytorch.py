@@ -525,20 +525,22 @@ if __name__ == "__main__":
     parser.add_argument("--async-mode", type=bool, default=False)
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
+    parser.add_argument("--world-size", type=int, default=1)
+    parser.add_argument("--ngpus", type=int, default=2)
     args = parser.parse_args()
 
     # environment intialixztion for dest training
     os.environ["MASTER_PORT"] = "8888"
     os.environ["MASTER_ADDR"] = args.master_ip
-    os.environ["WORLD_SIZE"] = '2'
+    os.environ["WORLD_SIZE"] = str(args.world_size)
     os.environ["RANK"] = args.rank
     os.environ["NCCL_SOCKET_IFNAME"]="enp9s0f0"
     os.environ["NCCL_DEBUG"]="WARN"
     os.environ["NCCL_DEBUG_SUBSYS"]="ALL"
     rank = int(args.rank)
-    size = 2
-    dist.init_process_group('nccl', rank=rank, world_size=2)
-    group = dist.new_group([0,1])
+    size = args.world_size
+    dist.init_process_group('nccl', rank=rank, world_size=size)
+    group = dist.new_group(list(range(args.world_size)))
 
 
 
@@ -554,7 +556,7 @@ if __name__ == "__main__":
         torch.cuda.manual_seed_all(args.numpy_rand_seed)
         torch.backends.cudnn.deterministic = True
         device = torch.device("cuda", 0)
-        ngpus = torch.cuda.device_count()  # 1
+        ngpus = args.ngpus #torch.cuda.device_count()  # 1
         print("Using {} GPU(s)...".format(ngpus))
     else:
         device = torch.device("cpu")
