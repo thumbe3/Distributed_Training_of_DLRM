@@ -78,8 +78,9 @@ from torch.nn.parallel.parallel_apply import parallel_apply
 from torch.nn.parallel.replicate import replicate
 from torch.nn.parallel.scatter_gather import gather, scatter
 from random import Random
+#import faulthandler; faulthandler.enable()
 
-
+#import pdb;pdb.set_trace()
 # from torchviz import make_dot
 # import torch.nn.functional as Functional
 # from torch.nn.parameter import Parameter
@@ -338,6 +339,8 @@ class DLRM_Net(nn.Module):
         batch_size = dense_x.size()[0]
         ndevices = min(self.ndevices, batch_size, len(self.emb_l))
         device_ids = range(ndevices)
+       
+ 
         # WARNING: must redistribute the model if mini-batch size changes(this is common
         # for last mini-batch, when # of elements in the dataset/batch size is not even
         if self.parallel_model_batch_size != batch_size:
@@ -351,7 +354,6 @@ class DLRM_Net(nn.Module):
             t_list = []
             for k, emb in enumerate(self.emb_l):
                 d = torch.device("cuda:" + str(k % ndevices))
-                emb.to(d)
                 t_list.append(emb.to(d))
             self.emb_l = nn.ModuleList(t_list)
             self.parallel_model_batch_size = batch_size
@@ -384,9 +386,9 @@ class DLRM_Net(nn.Module):
         x = parallel_apply(self.bot_l_replicas, dense_x, None, device_ids)
         # debug prints
         # print(x)
-
         # embeddings
         ly = self.apply_emb(lS_o, lS_i, self.emb_l)
+
         # debug prints
         # print(ly)
 
@@ -402,12 +404,12 @@ class DLRM_Net(nn.Module):
         t_list = []
         for k, _ in enumerate(self.emb_l):
             d = torch.device("cuda:" + str(k % ndevices))
-            y = scatter(ly[k], device_ids, dim=0)
+            y = scatter(ly[k].to(d), device_ids, dim=0)
             t_list.append(y)
         # adjust the list to be ordered per device
         ly = list(map(lambda y: list(y), zip(*t_list)))
         # debug prints
-        # print(ly)
+        #print(ly)
 
         # interactions
         z = []
@@ -427,7 +429,6 @@ class DLRM_Net(nn.Module):
 
         ### gather the distributed results ###
         p0 = gather(p, self.output_d, dim=0)
-
         # clamp output if needed
         if 0.0 < self.loss_threshold and self.loss_threshold < 1.0:
             z0 = torch.clamp(
@@ -506,7 +507,7 @@ if __name__ == "__main__":
     parser.add_argument("--print-precision", type=int, default=5)
     parser.add_argument("--numpy-rand-seed", type=int, default=123)
     parser.add_argument("--sync-dense-params", type=bool, default=True)
-    parser.add_argument("--data-partition",type=bool, default=False)
+    parser.add_argument("--data-partition",action="store_true", default=False)
     # inference
     parser.add_argument("--inference-only", action="store_true", default=False)
     # onnx
@@ -522,7 +523,7 @@ if __name__ == "__main__":
     parser.add_argument("--plot-compute-graph", action="store_true", default=False)
     parser.add_argument("--rank", type=str, default="0")
     parser.add_argument("--master_ip", type=str, default="10.138.0.18")
-    parser.add_argument("--async-mode", type=bool, default=False)
+    parser.add_argument("--async-mode", action="store_true", default=False)
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
     parser.add_argument("--world-size", type=int, default=1)
@@ -893,9 +894,10 @@ if __name__ == "__main__":
 
     print("time/loss/accuracy (if enabled):")
     start_time = time.time()
-    with torch.autograd.profiler.profile(args.enable_profiling, use_gpu) as prof:
+    with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
         while k < args.nepochs:
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
+                #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
                 if j >= int(10000*128/args.mini_batch_size):
                     break
@@ -920,12 +922,7 @@ if __name__ == "__main__":
                 print(Z.detach().cpu().numpy())
                 print(E.detach().cpu().numpy())
                 '''
-                # compute loss and accuracy
-                L = E.detach().cpu().numpy()  # numpy array
-                S = Z.detach().cpu().numpy()  # numpy array
-                T = T.detach().cpu().numpy()  # numpy array
-                mbs = T.shape[0]  # = args.mini_batch_size except maybe for last
-                A = np.sum((np.round(S, 0) == T).astype(np.uint8)) / mbs
+
 
                 if not args.inference_only:
                     # scaled error gradient propagation
@@ -942,6 +939,13 @@ if __name__ == "__main__":
 
                     # optimizer
                     optimizer.step()
+
+                # compute loss and accuracy
+                L = E.detach().cpu().numpy()  # numpy array
+                S = Z.detach().cpu().numpy()  # numpy array
+                T = T.detach().cpu().numpy()  # numpy array
+                mbs = T.shape[0]  # = args.mini_batch_size except maybe for last
+                A = np.sum((np.round(S, 0) == T).astype(np.uint8)) / mbs
 
                 t2 = time_wrap(use_gpu)
                 total_time += t2 - t1
@@ -1085,3 +1089,5 @@ if __name__ == "__main__":
         dlrm_pytorch_onnx = onnx.load("dlrm_s_pytorch.onnx")
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
+
+    os.system('pkill -f dstat_var')
