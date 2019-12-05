@@ -62,6 +62,7 @@ import time
 
 # data generation
 import dlrm_data_pytorch as dp
+from dlrm_data_yelp import *
 import torch.distributed as dist
 
 # numpy
@@ -641,6 +642,24 @@ if __name__ == "__main__":
             )))
         m_den = train_data.m_den
         ln_bot[0] = m_den
+
+    elif (args.data_generation == "yelp"):
+        train_data = YelpDataSet('yelp_processed_train.npz')
+        train_loader = torch.utils.data.DataLoader(
+            train_data,
+            batch_size=int(args.mini_batch_size),
+            shuffle=True,
+            num_workers=args.num_workers,
+            pin_memory=False,
+            collate_fn=collate_wrapper_yelp,
+            drop_last=False,  # True
+        )
+
+        nbatches = args.num_batches if args.num_batches > 0 else len(train_loader)
+        ln_emb = train_data.counts
+        m_den = train_data.m_den
+        ln_bot[0] = m_den
+        
     else:
         # input and target at random
         def collate_wrapper(list_of_tuples):
@@ -843,7 +862,10 @@ if __name__ == "__main__":
 
     def loss_fn_wrap(Z, T, use_gpu, device):
         if use_gpu:
-            return loss_fn(Z, T.to(device))
+            #print('Wrapping up', Z.data, T.cpu().numpy())
+            returnval= loss_fn(Z, T.to(device))
+            #print(returnval)
+            return returnval
         else:
             return loss_fn(Z, T)
 
@@ -899,6 +921,7 @@ if __name__ == "__main__":
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
+                print(j)
                 if j >= int(10000*128/args.mini_batch_size):
                     break
                 '''
@@ -911,11 +934,14 @@ if __name__ == "__main__":
                 '''
                 t1 = time_wrap(use_gpu)
 
+
                 # forward pass
                 Z = dlrm_wrap(X, lS_o, lS_i, use_gpu, device)
-
+                
+                
                 # loss
                 E = loss_fn_wrap(Z, T, use_gpu, device)
+
                 '''
                 # debug prints
                 print("output and loss")
@@ -939,14 +965,13 @@ if __name__ == "__main__":
 
                     # optimizer
                     optimizer.step()
-
                 # compute loss and accuracy
-                L = E.detach().cpu().numpy()  # numpy array
+                L = E.detach()
+                L = L.cpu().numpy()  # numpy array
                 S = Z.detach().cpu().numpy()  # numpy array
                 T = T.detach().cpu().numpy()  # numpy array
                 mbs = T.shape[0]  # = args.mini_batch_size except maybe for last
                 A = np.sum((np.round(S, 0) == T).astype(np.uint8)) / mbs
-
                 t2 = time_wrap(use_gpu)
                 total_time += t2 - t1
                 total_accu += A
@@ -959,9 +984,11 @@ if __name__ == "__main__":
                     and (args.data_generation == "dataset")
                     and (((j + 1) % args.test_freq == 0) or (j + 1 == nbatches))
                 )
+                
 
                 # print time, loss and accuracy
                 if print_tl or print_ts:
+                    
                     gT = 1000.0 * total_time / total_iter if args.print_time else -1
                     total_time = 0
 
