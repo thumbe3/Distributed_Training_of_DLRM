@@ -53,6 +53,10 @@
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import GPUtil
+from threading import Thread
+import time
+
 import faulthandler; faulthandler.enable()
 # miscellaneous
 import builtins
@@ -88,6 +92,25 @@ from random import Random
 
 exc = getattr(builtins, "IOError", "FileNotFoundError")
 
+#### GPU Utilization ###############
+class Monitor(Thread):
+    def __init__(self, delay):
+        super(Monitor, self).__init__()
+        self.stopped = False
+        self.delay = delay
+        self.start()
+
+    def run(self):
+        while not self.stopped:
+           # fd = open('gputil_test','a')
+            #original = sys.stdout
+            #sys.stdout = fd
+            GPUtil.showUtilization()
+            #sys.stdout = original
+            time.sleep(self.delay)
+
+    def stop(self):
+        self.stopped = True
 
 #########  data partitioner #############################
 class Partition(object):
@@ -530,7 +553,8 @@ if __name__ == "__main__":
     parser.add_argument("--world-size", type=int, default=1)
     parser.add_argument("--ngpus", type=int, default=2)
     args = parser.parse_args()
-
+    
+    monitor = Monitor(2)
     # environment intialixztion for dest training
     os.environ["MASTER_PORT"] = "8888"
     os.environ["MASTER_ADDR"] = args.master_ip
@@ -921,7 +945,6 @@ if __name__ == "__main__":
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
-                print(j)
                 if j >= int(10000*128/args.mini_batch_size):
                     break
                 '''
@@ -1116,5 +1139,5 @@ if __name__ == "__main__":
         dlrm_pytorch_onnx = onnx.load("dlrm_s_pytorch.onnx")
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
-
+    monitor.stop()
     os.system('pkill -f dstat_var')
