@@ -97,3 +97,9 @@ Finished epoch 8
 Finished training it 170/170 of epoch 9 and time taken 0.026009185314178465, 11.20 ms/it, loss 0.476273, accuracy 76.434 %
 Finished epoch 9
 Finished the program
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
