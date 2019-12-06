@@ -1,0 +1,4 @@
+python3: no process found
+
+c4130-110133:16971:16971 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+NCCL version 2.4.8+cuda10.1
