@@ -959,3 +959,4 @@ Finished training it 2048/2709 of epoch 9 and time taken 0.31072351574897766, 10
 Finished training it 2709/2709 of epoch 9 and time taken 0.3184224908351898, 10.99 ms/it, loss 0.206666, accuracy 90.961 %
 Finished epoch 9
 Finished the program
+bash: line 1: 19041 Killed                  python3 -W ignore dlrm_s_pytorch.py --use-gpu --data-partition --arch-sparse-feature-size=16 --arch-mlp-bot=23-512-256-64-16 --arch-mlp-top=512-256-1 --data-generation=yelp --loss-function=bce --round-targets=True --learning-rate=0.1 --test-freq 1000000 --print-freq=1024 --print-time --world-size=2 --master_ip 10.10.1.1 --rank 0 --ngpus 1 --async-mode False --mini-batch-size 32 --arch-interaction-op dot --nepochs 10
