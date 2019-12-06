@@ -1,0 +1,136 @@
+
+c4130-110133:25519:25519 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+NCCL version 2.4.8+cuda10.1
+Using 1 GPU(s)...
+Sparse features= 9, Dense features= 24
+Sparse features= 9, Dense features= 24
+time/loss/accuracy (if enabled):
+| ID | GPU | MEM |
+------------------
+|  0 |  8% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 29% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 0 and time taken 0.002690166711807251, 11.38 ms/it, loss 0.661834, accuracy 60.474 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 0, loss 0.660859, accuracy 57.570 %, best 57.570 %
+Finished epoch 0
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 1 and time taken 0.005292496919631958, 10.22 ms/it, loss 0.624066, accuracy 64.809 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 1, loss 0.693516, accuracy 55.208 %, best 57.570 %
+Finished epoch 1
+| ID | GPU | MEM |
+------------------
+|  0 | 30% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 2 and time taken 0.007893568515777587, 10.22 ms/it, loss 0.597212, accuracy 67.543 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 2, loss 0.589960, accuracy 69.933 %, best 69.933 %
+Finished epoch 2
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 3 and time taken 0.010500433683395385, 10.21 ms/it, loss 0.571610, accuracy 69.071 %
+Starting Test loop
+| ID | GPU | MEM |
+------------------
+|  0 | 28% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Test loop ended
+Testing at - 170/170 of epoch 3, loss 0.493139, accuracy 77.105 %, best 77.105 %
+Finished epoch 3
+| ID | GPU | MEM |
+------------------
+|  0 | 26% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 4 and time taken 0.013158985137939453, 10.35 ms/it, loss 0.549793, accuracy 70.936 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 4, loss 0.679131, accuracy 58.164 %, best 77.105 %
+Finished epoch 4
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 5 and time taken 0.01572365689277649, 10.09 ms/it, loss 0.521158, accuracy 73.139 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 5, loss 0.544847, accuracy 68.588 %, best 77.105 %
+Finished epoch 5
+| ID | GPU | MEM |
+------------------
+|  0 | 28% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 6 and time taken 0.018299193382263185, 10.08 ms/it, loss 0.510400, accuracy 73.615 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 6, loss 0.474287, accuracy 74.471 %, best 77.105 %
+Finished epoch 6
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 7 and time taken 0.020853815078735353, 9.83 ms/it, loss 0.493157, accuracy 75.161 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 7, loss 1.312592, accuracy 47.777 %, best 77.105 %
+Finished epoch 7
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 26% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 8 and time taken 0.023435102939605712, 9.98 ms/it, loss 0.498818, accuracy 75.018 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 8, loss 0.407815, accuracy 79.514 %, best 79.514 %
+Finished epoch 8
+| ID | GPU | MEM |
+------------------
+|  0 | 28% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 9 and time taken 0.026049810647964477, 10.40 ms/it, loss 0.456751, accuracy 77.327 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 9, loss 0.353829, accuracy 86.146 %, best 86.146 %
+Finished epoch 9
+Finished the program
