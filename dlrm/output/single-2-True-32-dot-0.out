@@ -1,0 +1,3 @@
+
+c4130-110133:20370:20370 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+NCCL version 2.4.8+cuda10.1
