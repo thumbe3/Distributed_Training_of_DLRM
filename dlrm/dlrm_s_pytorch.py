@@ -547,14 +547,13 @@ if __name__ == "__main__":
     parser.add_argument("--plot-compute-graph", action="store_true", default=False)
     parser.add_argument("--rank", type=str, default="0")
     parser.add_argument("--master_ip", type=str, default="10.138.0.18")
-    parser.add_argument("--async-mode", action="store_true", default=False)
+    parser.add_argument("--async-mode", type=bool, default=False)
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
     parser.add_argument("--world-size", type=int, default=1)
     parser.add_argument("--ngpus", type=int, default=2)
     args = parser.parse_args()
     
-    monitor = Monitor(2)
     # environment intialixztion for dest training
     os.environ["MASTER_PORT"] = "8888"
     os.environ["MASTER_ADDR"] = args.master_ip
@@ -669,13 +668,15 @@ if __name__ == "__main__":
 
     elif (args.data_generation == "yelp"):
         train_data = YelpDataSet('yelp_processed_train.npz')
+        if args.data_partition:
+            train_data = partition_dataset(train_data, args)
         train_loader = torch.utils.data.DataLoader(
             train_data,
             batch_size=int(args.mini_batch_size),
-            shuffle=True,
+            shuffle=False,
             num_workers=args.num_workers,
-            pin_memory=False,
             collate_fn=collate_wrapper_yelp,
+            pin_memory=False,
             drop_last=False,  # True
         )
 
@@ -683,7 +684,24 @@ if __name__ == "__main__":
         ln_emb = train_data.counts
         m_den = train_data.m_den
         ln_bot[0] = m_den
-        
+
+        test_data =  YelpDataSet('yelp_processed_test.npz')
+
+        if args.data_partition:
+            test_data = partition_dataset(test_data, args)
+        test_loader = torch.utils.data.DataLoader(
+            test_data,
+            batch_size=int(args.mini_batch_size),
+            shuffle=False,
+            num_workers=args.num_workers,
+            collate_fn=collate_wrapper_yelp,
+            pin_memory=False,
+            drop_last=False,  # True
+        )
+        nbatches_test = len(test_loader)
+
+
+
     else:
         # input and target at random
         def collate_wrapper(list_of_tuples):
@@ -937,7 +955,8 @@ if __name__ == "__main__":
                 ld_nbatches_test, ld_gL_test, ld_gA_test * 100
             )
         )
-
+    
+    monitor = Monitor(2)
     print("time/loss/accuracy (if enabled):")
     start_time = time.time()
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
@@ -1005,7 +1024,7 @@ if __name__ == "__main__":
                 print_ts = (
                     (args.test_freq > 0)
                     and (args.data_generation == "dataset")
-                    and (((j + 1) % args.test_freq == 0) or (j + 1 == nbatches))
+                    and (j + 1 == nbatches)
                 )
                 
 
@@ -1140,4 +1159,4 @@ if __name__ == "__main__":
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
     monitor.stop()
-    os.system('pkill -f dstat_var')
+print("Finished the program")
