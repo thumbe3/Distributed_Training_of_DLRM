@@ -1114,7 +1114,7 @@ if __name__ == "__main__":
                             )
 
                     print(
-                        "Testing at - {}/{} of epoch {}, ".format(j + 1, nbatches, 0)
+                        "Testing at - {}/{} of epoch {}, ".format(j + 1, nbatches, k)
                         + "loss {:.6f}, accuracy {:3.3f} %, best {:3.3f} %".format(
                             gL_test, gA_test * 100, best_gA_test * 100
                         )

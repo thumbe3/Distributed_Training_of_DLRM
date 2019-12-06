@@ -1,8 +1,8 @@
 source cluster_utils.sh
-cluster_mode=("cluster" "single")
-batch_size=("32" "64" "128" "512")
+cluster_mode=("single")
+batch_size=( "128" "512")
 interaction=("dot" "cat")
-ngpus=(1 2 3)
+ngpus=(1 2)
 async_mode=("True" "False")
 epochs=10
 dataset=$1
