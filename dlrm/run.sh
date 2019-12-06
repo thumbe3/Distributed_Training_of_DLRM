@@ -29,7 +29,6 @@ for s_mode in "${async_mode[@]}"; do
   sleep 1
   new_num_line="$(grep -nr 'Finished the program' $dataset|wc -l)"
   done
-  killall -9 python3
 
   git add $dataset
   git commit -m "Periodic commit for $dataset"

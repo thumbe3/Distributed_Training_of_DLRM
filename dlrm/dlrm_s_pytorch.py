@@ -1023,7 +1023,6 @@ if __name__ == "__main__":
                 print_tl = ((j + 1) % args.print_freq == 0) or (j + 1 == nbatches)
                 print_ts = (
                     (args.test_freq > 0)
-                    and (args.data_generation == "dataset")
                     and (j + 1 == nbatches)
                 )
                 

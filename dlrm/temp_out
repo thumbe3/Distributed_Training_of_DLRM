@@ -1,0 +1,29 @@
+Create 
+Copying the script to all the remote hosts.
+The output is logged to output/outpuslog-i.out, where i = 0,..2 are the VM numbers.
+[Yelp_Dataset 87bcecc] Periodic commit for output_yelp
+ Committer: ushmal <ushmal@c4130-110133.wisc.cloudlab.us>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 343 insertions(+), 12412 deletions(-)
+ delete mode 100644 dlrm/output_yelp/cluster-1-False-32-dot-0.out
+ delete mode 100644 dlrm/output_yelp/cluster-1-False-32-dot-1.out
+ delete mode 100644 dlrm/output_yelp/cluster-2-False-32-dot-0.out
+ delete mode 100644 dlrm/output_yelp/cluster-2-False-32-dot-1.out
+ delete mode 100644 dlrm/output_yelp/cluster-2-True-32-dot-0.out
+ delete mode 100644 dlrm/output_yelp/cluster-2-True-32-dot-1.out
+ delete mode 100644 dlrm/output_yelp/cluster-3-True-32-dot-0.out
+ delete mode 100644 dlrm/output_yelp/cluster-3-True-32-dot-1.out
+GIT PUSHED
+Create 
+Copying the script to all the remote hosts.
+The output is logged to output/outpuslog-i.out, where i = 0,..2 are the VM numbers.
