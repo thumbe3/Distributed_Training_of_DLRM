@@ -1,0 +1,203 @@
+python3: no process found
+
+c4130-110133:16811:16811 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+NCCL version 2.4.8+cuda10.1
+Using 2 GPU(s)...
+Sparse features= 9, Dense features= 24
+Sparse features= 9, Dense features= 24
+time/loss/accuracy (if enabled):
+| ID | GPU | MEM |
+------------------
+|  0 |  8% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 |  0% |  7% |
+|  1 |  2% |  4% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 |  0% |  7% |
+|  1 |  1% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 11% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 11% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 0 and time taken 0.009668222188949586, 50.37 ms/it, loss 0.666082, accuracy 60.216 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 0, loss 0.659290, accuracy 58.333 %, best 58.333 %
+Finished epoch 0
+| ID | GPU | MEM |
+------------------
+|  0 | 16% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 18% |  7% |
+|  1 |  3% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 1 and time taken 0.014495118141174317, 20.27 ms/it, loss 0.648885, accuracy 61.900 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 1, loss 0.662926, accuracy 61.169 %, best 61.169 %
+Finished epoch 1
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  4% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 13% |  7% |
+|  1 |  3% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 2 and time taken 0.019245912790298463, 20.08 ms/it, loss 0.642378, accuracy 62.866 %
+Starting Test loop
+| ID | GPU | MEM |
+------------------
+|  0 |  7% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Test loop ended
+Testing at - 170/170 of epoch 2, loss 0.656753, accuracy 59.562 %, best 61.169 %
+Finished epoch 2
+| ID | GPU | MEM |
+------------------
+|  0 | 14% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 17% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 3 and time taken 0.023895558834075927, 20.40 ms/it, loss 0.585512, accuracy 69.539 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 3, loss 0.526296, accuracy 73.197 %, best 73.197 %
+Finished epoch 3
+| ID | GPU | MEM |
+------------------
+|  0 | 14% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 31% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 4 and time taken 0.028499578475952147, 20.86 ms/it, loss 0.550755, accuracy 73.116 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 4, loss 0.653826, accuracy 63.841 %, best 73.197 %
+Finished epoch 4
+| ID | GPU | MEM |
+------------------
+|  0 | 27% |  7% |
+|  1 |  4% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 24% |  7% |
+|  1 |  4% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 5 and time taken 0.032958919048309325, 20.00 ms/it, loss 0.599742, accuracy 67.011 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 5, loss 0.614248, accuracy 64.160 %, best 73.197 %
+Finished epoch 5
+| ID | GPU | MEM |
+------------------
+|  0 | 19% |  7% |
+|  1 |  3% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 6 and time taken 0.03735605001449585, 19.75 ms/it, loss 0.541597, accuracy 72.973 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 6, loss 0.550318, accuracy 71.556 %, best 73.197 %
+Finished epoch 6
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 16% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 7 and time taken 0.041766447067260744, 19.69 ms/it, loss 0.513269, accuracy 75.536 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 7, loss 0.697816, accuracy 58.715 %, best 73.197 %
+Finished epoch 7
+| ID | GPU | MEM |
+------------------
+|  0 | 25% |  7% |
+|  1 |  2% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 22% |  7% |
+|  1 |  4% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 8 and time taken 0.04617735004425049, 19.31 ms/it, loss 0.544581, accuracy 72.594 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 8, loss 0.409848, accuracy 83.646 %, best 83.646 %
+Finished epoch 8
+| ID | GPU | MEM |
+------------------
+|  0 | 22% |  7% |
+|  1 |  3% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 17% |  7% |
+|  1 |  3% |  7% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 9 and time taken 0.050658822774887084, 20.12 ms/it, loss 0.470317, accuracy 77.526 %
+Starting Test loop
+Test loop ended
+Testing at - 170/170 of epoch 9, loss 0.365446, accuracy 84.773 %, best 84.773 %
+Finished epoch 9
+Finished the program
