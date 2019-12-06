@@ -894,3 +894,4 @@ Test loop ended
 Testing at - 1355/1355 of epoch 9, loss 0.301058, accuracy 85.478 %, best 89.876 %
 Finished epoch 9
 Finished the program
+bash: line 1: 28578 Killed                  python3 -W ignore dlrm_s_pytorch.py --use-gpu --data-partition --arch-sparse-feature-size=16 --arch-mlp-bot=23-512-256-64-16 --arch-mlp-top=512-256-1 --data-generation=yelp --loss-function=bce --round-targets=True --learning-rate=0.1 --test-freq 1000000 --print-freq=1024 --print-time --world-size=2 --master_ip 10.10.1.1 --rank 0 --ngpus 2 --async-mode True --mini-batch-size 64 --arch-interaction-op cat --nepochs 10
