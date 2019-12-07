@@ -1,39 +1,39 @@
 python3: no process found
 
-c4130-110233:6948:6948 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+c4130-110233:7106:7106 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
 Using 1 GPU(s)...
 Sparse features= 9, Dense features= 24
 Sparse features= 9, Dense features= 24
 time/loss/accuracy (if enabled):
 | ID | GPU | MEM |
 ------------------
-|  0 |  0% |  7% |
+|  0 |  7% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 24% |  7% |
+|  0 | 52% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 22% |  7% |
+|  0 | 45% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 19% |  7% |
+|  0 | 29% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 0 and time taken 0.006933918476104736, 8.76 ms/it, loss 0.609614, accuracy 65.837 %
+Finished training it 678/678 of epoch 0 and time taken 0.007289249181747437, 9.38 ms/it, loss 0.603407, accuracy 66.441 %
 Finished epoch 0
 | ID | GPU | MEM |
 ------------------
-|  0 | 18% |  7% |
+|  0 | 27% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -45,15 +45,27 @@ Finished epoch 0
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 18% |  7% |
+|  0 | 21% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 1 and time taken 0.01405615234375, 9.13 ms/it, loss 0.525340, accuracy 73.349 %
+Finished training it 678/678 of epoch 1 and time taken 0.014397810697555542, 9.07 ms/it, loss 0.525957, accuracy 73.155 %
 Finished epoch 1
 | ID | GPU | MEM |
 ------------------
-|  0 | 43% |  7% |
+|  0 | 22% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 24% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -63,23 +75,17 @@ Finished epoch 1
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 39% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 34% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 2 and time taken 0.02211311101913452, 10.57 ms/it, loss 0.464473, accuracy 78.097 %
+Finished training it 678/678 of epoch 2 and time taken 0.022169159173965454, 10.01 ms/it, loss 0.547566, accuracy 71.959 %
 Finished epoch 2
 | ID | GPU | MEM |
 ------------------
-|  0 | 33% |  7% |
+|  0 | 36% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 35% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -89,23 +95,37 @@ Finished epoch 2
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 28% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 3 and time taken 0.030132176876068114, 10.44 ms/it, loss 0.413214, accuracy 80.919 %
+Finished training it 678/678 of epoch 3 and time taken 0.02974574279785156, 9.81 ms/it, loss 0.468727, accuracy 77.369 %
 Finished epoch 3
 | ID | GPU | MEM |
 ------------------
-|  0 | 21% |  7% |
+|  0 | 29% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 21% |  7% |
+|  0 | 22% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 678/678 of epoch 4 and time taken 0.03656890296936035, 8.83 ms/it, loss 0.441107, accuracy 78.730 %
+Finished epoch 4
+| ID | GPU | MEM |
+------------------
+|  0 | 36% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 35% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -117,21 +137,93 @@ Finished epoch 3
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 32% |  7% |
+|  0 | 31% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 4 and time taken 0.038199606418609616, 10.43 ms/it, loss 0.398169, accuracy 81.588 %
-Finished epoch 4
+Finished training it 678/678 of epoch 5 and time taken 0.043524734735488894, 8.94 ms/it, loss 0.396740, accuracy 81.357 %
+Finished epoch 5
 | ID | GPU | MEM |
 ------------------
-|  0 | 36% |  7% |
+|  0 | 26% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 37% |  7% |
+|  0 | 26% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 22% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 678/678 of epoch 6 and time taken 0.05050845551490784, 8.98 ms/it, loss 0.373887, accuracy 82.866 %
+Finished epoch 6
+| ID | GPU | MEM |
+------------------
+|  0 | 20% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 18% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 678/678 of epoch 7 and time taken 0.05836616063117981, 10.27 ms/it, loss 0.380000, accuracy 82.809 %
+Finished epoch 7
+| ID | GPU | MEM |
+------------------
+|  0 | 91% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 20% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 21% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 678/678 of epoch 8 and time taken 0.06621272945404053, 10.14 ms/it, loss 0.373280, accuracy 82.917 %
+Finished epoch 8
+| ID | GPU | MEM |
+------------------
+|  0 | 19% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 18% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 20% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -141,17 +233,57 @@ Finished epoch 4
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
+Finished training it 678/678 of epoch 9 and time taken 0.07405883193016052, 10.13 ms/it, loss 0.361104, accuracy 83.345 %
+Finished epoch 9
+| ID | GPU | MEM |
+------------------
+|  0 | 31% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
 |  0 | 27% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 5 and time taken 0.0461634635925293, 10.36 ms/it, loss 0.355802, accuracy 84.033 %
-Finished epoch 5
 | ID | GPU | MEM |
 ------------------
-|  0 | 28% |  7% |
+|  0 | 25% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 678/678 of epoch 10 and time taken 0.0813979616165161, 9.57 ms/it, loss 0.358928, accuracy 83.693 %
+Finished epoch 10
+| ID | GPU | MEM |
+------------------
+|  0 | 24% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 27% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 34% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 31% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 678/678 of epoch 11 and time taken 0.08917919778823853, 10.11 ms/it, loss 0.374021, accuracy 83.035 %
+Finished epoch 11
+| ID | GPU | MEM |
+------------------
+|  0 | 27% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -163,15 +295,15 @@ Finished epoch 5
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 24% |  7% |
+|  0 | 23% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 6 and time taken 0.05398957681655884, 10.24 ms/it, loss 0.375644, accuracy 82.996 %
-Finished epoch 6
+Finished training it 678/678 of epoch 12 and time taken 0.09689657711982727, 10.01 ms/it, loss 0.365059, accuracy 83.593 %
+Finished epoch 12
 | ID | GPU | MEM |
 ------------------
-|  0 | 52% |  7% |
+|  0 | 26% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
@@ -189,143 +321,11 @@ Finished epoch 6
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 23% |  7% |
+|  0 | 19% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 7 and time taken 0.061811646223068235, 10.08 ms/it, loss 0.365035, accuracy 83.534 %
-Finished epoch 7
-| ID | GPU | MEM |
-------------------
-|  0 | 22% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 21% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 22% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 35% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 8 and time taken 0.06965198135375976, 10.12 ms/it, loss 0.341318, accuracy 84.611 %
-Finished epoch 8
-| ID | GPU | MEM |
-------------------
-|  0 | 36% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 36% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 34% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 9 and time taken 0.077079519033432, 9.42 ms/it, loss 0.347375, accuracy 84.218 %
-Finished epoch 9
-| ID | GPU | MEM |
-------------------
-|  0 | 25% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 23% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 31% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 10 and time taken 0.08416535925865173, 9.12 ms/it, loss 0.306517, accuracy 86.326 %
-Finished epoch 10
-| ID | GPU | MEM |
-------------------
-|  0 | 20% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 21% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 23% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 17% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 11 and time taken 0.09138005948066712, 9.24 ms/it, loss 0.333733, accuracy 85.222 %
-Finished epoch 11
-| ID | GPU | MEM |
-------------------
-|  0 | 34% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 37% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 35% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 12 and time taken 0.09843959736824036, 9.07 ms/it, loss 0.320443, accuracy 85.554 %
-Finished epoch 12
-| ID | GPU | MEM |
-------------------
-|  0 | 33% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 34% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
-|  0 | 36% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-Finished training it 678/678 of epoch 13 and time taken 0.10570163917541504, 9.31 ms/it, loss 0.304181, accuracy 86.353 %
+Finished training it 678/678 of epoch 13 and time taken 0.10458287501335144, 9.95 ms/it, loss 0.339296, accuracy 84.736 %
 Finished epoch 13
 | ID | GPU | MEM |
 ------------------
@@ -335,22 +335,16 @@ Finished epoch 13
 |  3 |  0% |  0% |
 | ID | GPU | MEM |
 ------------------
-|  0 | 37% |  7% |
-|  1 |  0% |  0% |
-|  2 |  0% |  0% |
-|  3 |  0% |  0% |
-| ID | GPU | MEM |
-------------------
 |  0 | 34% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
-Finished training it 678/678 of epoch 14 and time taken 0.11297253108024598, 9.40 ms/it, loss 0.289893, accuracy 87.222 %
-Finished epoch 14
-Finished the program
 | ID | GPU | MEM |
 ------------------
 |  0 | 28% |  7% |
 |  1 |  0% |  0% |
 |  2 |  0% |  0% |
 |  3 |  0% |  0% |
+Finished training it 678/678 of epoch 14 and time taken 0.11210067296028137, 9.66 ms/it, loss 0.342414, accuracy 84.549 %
+Finished epoch 14
+Finished the program
