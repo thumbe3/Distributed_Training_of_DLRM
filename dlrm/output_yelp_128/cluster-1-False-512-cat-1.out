@@ -1,0 +1,146 @@
+python3: no process found
+
+c4130-110233:13359:13359 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+Using 1 GPU(s)...
+Sparse features= 9, Dense features= 24
+Sparse features= 9, Dense features= 24
+time/loss/accuracy (if enabled):
+| ID | GPU | MEM |
+------------------
+|  0 |  7% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 34% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 0 and time taken 0.0025803635120391845, 10.51 ms/it, loss 0.657602, accuracy 61.373 %
+Finished epoch 0
+| ID | GPU | MEM |
+------------------
+|  0 | 17% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 1 and time taken 0.005181832075119019, 10.64 ms/it, loss 0.613825, accuracy 65.906 %
+Finished epoch 1
+| ID | GPU | MEM |
+------------------
+|  0 | 16% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 2 and time taken 0.007764096260070801, 10.90 ms/it, loss 0.576599, accuracy 69.082 %
+Finished epoch 2
+| ID | GPU | MEM |
+------------------
+|  0 | 14% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 3 and time taken 0.01035662579536438, 10.89 ms/it, loss 0.602084, accuracy 68.277 %
+Finished epoch 3
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 4 and time taken 0.013012911796569824, 11.22 ms/it, loss 0.534112, accuracy 72.066 %
+Finished epoch 4
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 16% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 5 and time taken 0.015561744213104248, 10.71 ms/it, loss 0.532907, accuracy 72.466 %
+Finished epoch 5
+| ID | GPU | MEM |
+------------------
+|  0 | 16% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 6 and time taken 0.018094805240631104, 10.67 ms/it, loss 0.520547, accuracy 72.870 %
+Finished epoch 6
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 7 and time taken 0.020612396478652956, 10.63 ms/it, loss 0.499667, accuracy 74.354 %
+Finished epoch 7
+| ID | GPU | MEM |
+------------------
+|  0 | 23% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 8 and time taken 0.023178810119628905, 10.85 ms/it, loss 0.495096, accuracy 75.023 %
+Finished epoch 8
+| ID | GPU | MEM |
+------------------
+|  0 | 22% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 9 and time taken 0.025689244031906127, 10.55 ms/it, loss 0.481783, accuracy 75.748 %
+Finished epoch 9
+| ID | GPU | MEM |
+------------------
+|  0 | 36% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+| ID | GPU | MEM |
+------------------
+|  0 | 17% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 10 and time taken 0.028249407529830933, 10.52 ms/it, loss 0.472858, accuracy 76.009 %
+Finished epoch 10
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 11 and time taken 0.030731327533721924, 10.10 ms/it, loss 0.450886, accuracy 77.389 %
+Finished epoch 11
+| ID | GPU | MEM |
+------------------
+|  0 | 14% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 12 and time taken 0.03321884679794312, 10.41 ms/it, loss 0.437222, accuracy 78.296 %
+Finished epoch 12
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 13 and time taken 0.0357077841758728, 10.38 ms/it, loss 0.455217, accuracy 77.771 %
+Finished epoch 13
+| ID | GPU | MEM |
+------------------
+|  0 | 15% |  7% |
+|  1 |  0% |  0% |
+|  2 |  0% |  0% |
+|  3 |  0% |  0% |
+Finished training it 170/170 of epoch 14 and time taken 0.03825258708000183, 10.71 ms/it, loss 0.460015, accuracy 77.656 %
+Finished epoch 14
+Finished the program
