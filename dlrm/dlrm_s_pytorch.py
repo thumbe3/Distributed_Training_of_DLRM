@@ -523,7 +523,7 @@ if __name__ == "__main__":
     parser.add_argument("--plot-compute-graph", action="store_true", default=False)
     parser.add_argument("--rank", type=str, default="0")
     parser.add_argument("--master_ip", type=str, default="10.138.0.18")
-    parser.add_argument("--async-mode", action="store_true", default=False)
+    parser.add_argument("--async-mode", type=bool, default=False)
     parser.add_argument("--save-model", type=str, default="")
     parser.add_argument("--load-model", type=str, default="")
     parser.add_argument("--world-size", type=int, default=1)
@@ -1090,4 +1090,4 @@ if __name__ == "__main__":
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
 
-    os.system('pkill -f dstat_var')
+print("Finished the program")
