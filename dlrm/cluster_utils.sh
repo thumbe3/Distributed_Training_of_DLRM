@@ -25,12 +25,12 @@ function start_cluster() {
 
         if [ "$1" = "single" ]; then
         
-            new_cmd="${CMD} --world-size=1 --master_ip 10.10.1.1 --rank 0  ${ARGS}"
+            new_cmd="${CMD} --world-size=1 --master_ip 130.127.133.250 --rank 0  ${ARGS}"
             nohup ssh $node0 "killall -9 python3; cd $PATH1; $new_cmd"> $7/$1-$2-$3-$4-$5-0.out 2>&1&
         else
-            new_cmd="${CMD} --world-size=2 --master_ip 10.10.1.1 --rank 0  ${ARGS}"
+            new_cmd="${CMD} --world-size=2 --master_ip  130.127.133.250 --rank 0  ${ARGS}"
             nohup ssh $node0  "killall -9 python3; cd $PATH1; $new_cmd"> $7/$1-$2-$3-$4-$5-0.out 2>&1&
-            new_cmd="${CMD} --world-size=2 --master_ip 10.10.1.1 --rank 1  ${ARGS}"
+            new_cmd="${CMD} --world-size=2 --master_ip 130.127.133.250 --rank 1  ${ARGS}"
             nohup ssh $node1  "killall -9 python3; cd $PATH1; $new_cmd"> $7/$1-$2-$3-$4-$5-1.out 2>&1&
         fi
     fi

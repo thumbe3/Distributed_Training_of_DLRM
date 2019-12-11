@@ -559,7 +559,7 @@ if __name__ == "__main__":
     os.environ["MASTER_ADDR"] = args.master_ip
     os.environ["WORLD_SIZE"] = str(args.world_size)
     os.environ["RANK"] = args.rank
-    os.environ["NCCL_SOCKET_IFNAME"]="enp129s0f1"
+    os.environ["NCCL_SOCKET_IFNAME"]="enp1s0f0"
     os.environ["NCCL_DEBUG"]="WARN"
     os.environ["NCCL_DEBUG_SUBSYS"]="ALL"
     rank = int(args.rank)
