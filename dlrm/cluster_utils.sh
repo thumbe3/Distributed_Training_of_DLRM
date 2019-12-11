@@ -1,6 +1,5 @@
-node0=ushmal@c4130-110133
-node1=ushmal@c4130-110233
-
+node0=ushmal@clgpu001
+node1=ushmal@clgpu002
 ####### Argumetmts ##########
 # size of mlps tried 
 # bt-mlp  512-256-64-16 and 256-128-64-16
@@ -9,7 +8,7 @@ node1=ushmal@c4130-110233
 # 2 number of gpus
 # 3 batch size
 
-PATH1="~/yelp_dlrm/CS744Project/dlrm/" 
+PATH1="~/temp/CS744Project/dlrm/" 
 
 function start_cluster() {
     if [ -z $1 ]; then
