@@ -19,7 +19,7 @@ function start_cluster() {
         mkdir -p $7
         echo "The output is logged to output/outpuslog-i.out, where i = 0,..2 are the VM numbers."
 
-        CMD="python3 -W ignore dlrm_s_pytorch.py --use-gpu --data-partition --arch-sparse-feature-size=16 --arch-mlp-bot="23-256-128-64-16" --arch-mlp-top="256-128-1" --data-generation=yelp --loss-function=bce --round-targets=True --learning-rate=0.1  --test-freq 1000000 --print-freq=1024 --print-time" 
+        CMD="python3 -W ignore dlrm_s_pytorch.py --use-gpu --data-partition --arch-sparse-feature-size=16 --arch-mlp-bot='23-256-128-64-16' --arch-mlp-top='256-128-1' --data-generation=yelp --loss-function=bce --round-targets=True --learning-rate=0.1  --test-freq 1000000 --print-freq=1024 --print-time" 
 
         ARGS="--ngpus $2 --async-mode $3 --mini-batch-size $4  --arch-interaction-op $5 --nepochs $6"
 
