@@ -1,5 +1,6 @@
 source cluster_utils.sh
-cluster_mode=("single", "cluster")
+
+cluster_mode=("single" "cluster")
 batch_size=( "128")
 interaction=("dot")
 ngpus=(1 2)
