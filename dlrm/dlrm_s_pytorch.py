@@ -956,7 +956,7 @@ if __name__ == "__main__":
             )
         )
     
-    monitor = Monitor(2)
+    monitor = Monitor(0.02)
     print("time/loss/accuracy (if enabled):")
     start_time = time.time()
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
