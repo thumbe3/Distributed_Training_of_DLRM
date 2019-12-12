@@ -11895,3 +11895,7 @@ Test loop ended
 Testing at - 1355/1355 of epoch 9, loss 0.258326, accuracy 87.964 %, best 88.015 %
 Finished epoch 9
 Finished the program
+| ID | GPU | MEM |
+------------------
+|  0 |  8% |  3% |
+|  1 |  0% |  0% |
