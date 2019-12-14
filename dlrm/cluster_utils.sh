@@ -8,7 +8,7 @@ node1=ushmal@clgpu002
 # 2 number of gpus
 # 3 batch size
 
-PATH1="~/temp/CS744Project/dlrm/" 
+PATH1="~/CS744Project/dlrm/" 
 
 function start_cluster() {
     if [ -z $1 ]; then
@@ -20,7 +20,7 @@ function start_cluster() {
         echo "The output is logged to output/outpuslog-i.out, where i = 0,..2 are the VM numbers."
 
 
-        CMD="python3 -W ignore dlrm_s_pytorch.py --use-gpu --data-partition --arch-sparse-feature-size=16 --arch-mlp-bot="23-256-128-64-16" --arch-mlp-top="256-128-1" --data-generation=yelp --loss-function=bce --round-targets=True --learning-rate=0.1  --test-freq 1000000 --print-freq=100 --print-time" 
+        CMD="python3 -W ignore dlrm_s_pytorch.py --use-gpu --data-partition --arch-sparse-feature-size=4 --arch-mlp-bot="24-64-32-16-4" --arch-mlp-top="128-64-1" --data-generation=yelp --loss-function=bce --round-targets=True --learning-rate=0.1  --test-freq 100 --print-freq=100 --print-time" 
 
 
         ARGS="--ngpus $2 --async-mode $3 --mini-batch-size $4  --arch-interaction-op $5 --nepochs $6"

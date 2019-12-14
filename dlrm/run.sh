@@ -1,11 +1,11 @@
 source cluster_utils.sh
 
-cluster_mode=("single" "cluster")
-batch_size=( "128")
+cluster_mode=("cluster" "single")
+batch_size=("128" "512")
 interaction=("dot")
-ngpus=(1 2)
+ngpus=(2)
 async_mode=("False")
-epochs=10
+epochs=20
 dataset=$1
 
 mkdir -p $dataset
