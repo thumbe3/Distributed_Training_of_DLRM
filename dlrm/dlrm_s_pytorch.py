@@ -965,11 +965,8 @@ if __name__ == "__main__":
     monitor = Monitor(0.02)
     print("time/loss/accuracy (if enabled):")
     start_time = time.time()
-    loss_reached = False
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
         while k < args.nepochs:
-            if loss_reached:
-                break
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
@@ -1135,8 +1132,6 @@ if __name__ == "__main__":
                                 },
                                 args.save_model,
                             )
-                    if gL_test <= 0.13:
-                        loss_reached = True
                     print(
                         "Testing at - {}/{} of epoch {}, ".format(j + 1, nbatches, k)
                         + "loss {:.6f}, accuracy {:3.3f} %, best {:3.3f} %".format(
