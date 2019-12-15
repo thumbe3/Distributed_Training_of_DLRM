@@ -888,7 +888,6 @@ if __name__ == "__main__":
 
     ### main loop ###
     def time_wrap(use_gpu):
-        use_gpu=False 
         if use_gpu:
             torch.cuda.synchronize()
         return time.time()
