@@ -3,7 +3,7 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 #
-# Description: an implementation of a deep learning recommendation model (DLRM)
+# Description: an implementation of a deep learning recommendation model (
 # The model input consists of dense and sparse features. The former is a vector
 # of floating point values. The latter is a list of sparse indices into
 # embedding tables, which consist of vectors of floating point values.
@@ -888,6 +888,7 @@ if __name__ == "__main__":
 
     ### main loop ###
     def time_wrap(use_gpu):
+        use_gpu=False 
         if use_gpu:
             torch.cuda.synchronize()
         return time.time()
@@ -917,6 +918,11 @@ if __name__ == "__main__":
     total_loss = 0
     total_accu = 0
     total_iter = 0
+    dlrm_wrap_time = 0
+    loss_fn_time = 0
+    backward_time = 0
+    optimizer_time = 0
+    average_grad_time = 0
     k = 0
 
     # Load model is specified
@@ -959,13 +965,14 @@ if __name__ == "__main__":
     monitor = Monitor(0.02)
     print("time/loss/accuracy (if enabled):")
     start_time = time.time()
+    loss_reached = False
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
         while k < args.nepochs:
+            if loss_reached:
+                break
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
-                if j >= int(10000*128/args.mini_batch_size):
-                    break
                 '''
                 # debug prints
                 print("input and targets")
@@ -979,10 +986,12 @@ if __name__ == "__main__":
 
                 # forward pass
                 Z = dlrm_wrap(X, lS_o, lS_i, use_gpu, device)
+                time_dlrm_wrap = time_wrap(use_gpu)
                 
                 
                 # loss
                 E = loss_fn_wrap(Z, T, use_gpu, device)
+                time_loss_fn_wrap = time_wrap(use_gpu)
 
                 '''
                 # debug prints
@@ -998,8 +1007,9 @@ if __name__ == "__main__":
                     optimizer.zero_grad()
                     # backward pass
                     E.backward()
+                    time_backward = time_wrap(use_gpu)
                     average_gradients(dlrm,group, args.async_mode)
-
+                    time_average_grad = time_wrap(use_gpu)
                     # debug prints (check gradient norm)
                     # for l in mlp.layers:
                     #     if hasattr(l, 'weight'):
@@ -1007,6 +1017,7 @@ if __name__ == "__main__":
 
                     # optimizer
                     optimizer.step()
+                    time_optimizer = time_wrap(use_gpu)
                 # compute loss and accuracy
                 L = E.detach()
                 L = L.cpu().numpy()  # numpy array
@@ -1016,6 +1027,11 @@ if __name__ == "__main__":
                 A = np.sum((np.round(S, 0) == T).astype(np.uint8)) / mbs
                 t2 = time_wrap(use_gpu)
                 total_time += t2 - t1
+                dlrm_wrap_time += (time_dlrm_wrap - t1)*1000
+                loss_fn_time += (time_loss_fn_wrap - time_dlrm_wrap)*1000
+                backward_time += (time_backward - time_loss_fn_wrap)*1000
+                average_grad_time += (time_average_grad - time_backward)*1000
+                optimizer_time += (time_optimizer - time_average_grad)*1000               
                 total_accu += A
                 total_loss += L
                 total_iter += 1
@@ -1033,7 +1049,7 @@ if __name__ == "__main__":
                     
                     gT = 1000.0 * total_time / total_iter if args.print_time else -1
                     total_time = 0
-
+                    
                     gL = total_loss / total_iter
                     total_loss = 0
 
@@ -1043,13 +1059,19 @@ if __name__ == "__main__":
                     str_run_type = "inference" if args.inference_only else "training"
                     print(
                         "Finished {} it {}/{} of epoch {} and time taken {}, ".format(
-                            str_run_type, j + 1, nbatches, k, (time.time()-start_time)/1000
+                            str_run_type, j + 1, nbatches, k, (time.time()-start_time)
                         )
                         + "{:.2f} ms/it, loss {:.6f}, accuracy {:3.3f} %".format(
                             gT, gL, gA * 100
                         )
                     )
+                    print("DLRM_wrap_time {:.2f}, loss_fn_time {:.2f}, Backward_pass_time  {:.2f}, Average_Grad_time {:.2f}, Optimizer_step_time {:.2f}".format(dlrm_wrap_time/total_iter,loss_fn_time/total_iter,backward_time/total_iter, average_grad_time/total_iter, optimizer_time/total_iter))
                     total_iter = 0
+                    dlrm_wrap_time = 0
+                    loss_fn_time = 0
+                    backward_time = 0
+                    average_grad_time = 0
+                    optimizer_time = 0
 
                 # testing
                 if print_ts and not args.inference_only:
@@ -1113,7 +1135,8 @@ if __name__ == "__main__":
                                 },
                                 args.save_model,
                             )
-
+                    if gL_test <= 0.13:
+                        loss_reached = True
                     print(
                         "Testing at - {}/{} of epoch {}, ".format(j + 1, nbatches, k)
                         + "loss {:.6f}, accuracy {:3.3f} %, best {:3.3f} %".format(

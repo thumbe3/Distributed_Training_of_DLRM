@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "dlrm_s_pytorch.py", line 567, in <module>
+    dist.init_process_group('nccl', rank=rank, world_size=size)
+  File "/users/ushmal/.local/lib/python3.6/site-packages/torch/distributed/distributed_c10d.py", line 400, in init_process_group
+    store, rank, world_size = next(rendezvous(url))
+  File "/users/ushmal/.local/lib/python3.6/site-packages/torch/distributed/rendezvous.py", line 143, in _env_rendezvous_handler
+    store = TCPStore(master_addr, master_port, world_size, start_daemon)
+RuntimeError: connect() timed out.
