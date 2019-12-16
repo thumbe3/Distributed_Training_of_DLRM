@@ -654,8 +654,8 @@ if __name__ == "__main__":
             args.processed_data_file,
             args.memory_map
         )
-        if args.data_partition:
-            test_data = partition_dataset(test_data, args)
+        #if args.data_partition:
+            #test_data = partition_dataset(test_data, args)
         test_loader = torch.utils.data.DataLoader(
             test_data,
             batch_size=int(args.mini_batch_size),
@@ -976,7 +976,7 @@ if __name__ == "__main__":
     start_time = time.time()
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
         while k < args.nepochs:
-            save_embed(dlrm)
+            #save_embed(dlrm)
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
@@ -1187,9 +1187,9 @@ if __name__ == "__main__":
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
 
-import pickle
-out=open("emb"+str(rank)+".pickle", "wb")
+#import pickle
+#out=open("emb"+str(rank)+".pickle", "wb")
 
-pickle.dump(embed_global, out)
+#pickle.dump(embed_global, out)
 
 print("Finished the program")
