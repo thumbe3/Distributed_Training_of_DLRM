@@ -487,6 +487,7 @@ def average_gradients(dlrm, group, async_op):
         #print (param.grad.data)
 
 def save_embed(dlrm):
+    emb_arr = []
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
             emb_arr.append((name,param))
@@ -971,7 +972,6 @@ if __name__ == "__main__":
             )
         )
     
-    monitor = Monitor(0.02)
     print("time/loss/accuracy (if enabled):")
     start_time = time.time()
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
@@ -1186,7 +1186,6 @@ if __name__ == "__main__":
         dlrm_pytorch_onnx = onnx.load("dlrm_s_pytorch.onnx")
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
-    monitor.stop()
 
 import pickle
 out=open("emb"+str(rank)+".pickle")
