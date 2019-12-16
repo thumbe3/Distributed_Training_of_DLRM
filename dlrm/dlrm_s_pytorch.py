@@ -490,7 +490,7 @@ def save_embed(dlrm):
     emb_arr = []
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
-            emb_arr.append((name,param.cpu().numpy()))
+            emb_arr.append((name,param.detach().cpu().numpy()))
     embed_global.append(emb_arr)
 
 
