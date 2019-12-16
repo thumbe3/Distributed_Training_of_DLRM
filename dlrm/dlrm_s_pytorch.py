@@ -490,7 +490,7 @@ def save_embed(dlrm):
     emb_arr = []
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
-            emb_arr.append((name,param))
+            emb_arr.append((name,param.cpu().numpy()))
     embed_global.append(emb_arr)
 
 
@@ -1122,8 +1122,8 @@ if __name__ == "__main__":
                     is_best = gA_test > best_gA_test
                     if is_best:
                         best_gA_test = gA_test
-                        if not (args.save_model == ""):
-                            print("Saving model to {}".format(args.save_model))
+			if not (args.save_model == ""):
+			print("Saving model to {}".format(args.save_model))
                             torch.save(
                                 {
                                     "epoch": k,
