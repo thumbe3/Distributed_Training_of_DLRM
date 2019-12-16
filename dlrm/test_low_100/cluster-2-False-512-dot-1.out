@@ -1,0 +1,811 @@
+python3: no process found
+
+clgpu002:30380:30449 [0] misc/ibvwrap.cc:63 NCCL WARN Failed to open libibverbs.so[.1]
+NCCL version 2.4.8+cuda9.2
+Using 2 GPU(s)...
+Sparse features= 9, Dense features= 24
+Sparse features= 9, Dense features= 24
+time/loss/accuracy (if enabled):
+Finished training it 100/170 of epoch 0 and time taken 4.7338337898254395, 41.26 ms/it, loss 0.686149, accuracy 56.816 %
+DLRM_wrap_time 26.46, loss_fn_time 0.19, Backward_pass_time  8.51, Average_Grad_time 4.98, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 0, loss 0.666179, accuracy 59.183 %, best 59.183 %
+Finished training it 170/170 of epoch 0 and time taken 6.88555645942688, 21.73 ms/it, loss 0.657072, accuracy 61.292 %
+DLRM_wrap_time 7.32, loss_fn_time 0.20, Backward_pass_time  8.30, Average_Grad_time 4.80, Optimizer_step_time 0.92
+Finished epoch 0
+Finished training it 100/170 of epoch 1 and time taken 9.671695232391357, 21.75 ms/it, loss 0.637722, accuracy 63.607 %
+DLRM_wrap_time 7.52, loss_fn_time 0.20, Backward_pass_time  8.39, Average_Grad_time 4.51, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 1, loss 0.687648, accuracy 57.001 %, best 59.183 %
+Finished training it 170/170 of epoch 1 and time taken 11.836332082748413, 21.64 ms/it, loss 0.637137, accuracy 63.358 %
+DLRM_wrap_time 7.55, loss_fn_time 0.20, Backward_pass_time  8.35, Average_Grad_time 4.42, Optimizer_step_time 0.94
+Finished epoch 1
+Finished training it 100/170 of epoch 2 and time taken 14.603539228439331, 21.73 ms/it, loss 0.613135, accuracy 66.166 %
+DLRM_wrap_time 7.30, loss_fn_time 0.19, Backward_pass_time  8.31, Average_Grad_time 4.82, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 2, loss 0.596027, accuracy 68.798 %, best 68.798 %
+Finished training it 170/170 of epoch 2 and time taken 16.74298095703125, 21.46 ms/it, loss 0.603263, accuracy 67.215 %
+DLRM_wrap_time 7.46, loss_fn_time 0.21, Backward_pass_time  7.67, Average_Grad_time 5.03, Optimizer_step_time 0.91
+Finished epoch 2
+Finished training it 100/170 of epoch 3 and time taken 19.4631245136261, 21.20 ms/it, loss 0.597160, accuracy 67.445 %
+DLRM_wrap_time 7.51, loss_fn_time 0.20, Backward_pass_time  7.77, Average_Grad_time 4.62, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 3, loss 0.545644, accuracy 73.972 %, best 73.972 %
+Finished training it 170/170 of epoch 3 and time taken 21.607320547103882, 21.60 ms/it, loss 0.667701, accuracy 60.673 %
+DLRM_wrap_time 7.54, loss_fn_time 0.20, Backward_pass_time  7.71, Average_Grad_time 5.06, Optimizer_step_time 0.91
+Finished epoch 3
+Finished training it 100/170 of epoch 4 and time taken 24.331101417541504, 21.34 ms/it, loss 0.640346, accuracy 62.654 %
+DLRM_wrap_time 7.52, loss_fn_time 0.20, Backward_pass_time  7.76, Average_Grad_time 4.77, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 4, loss 0.619423, accuracy 64.475 %, best 73.972 %
+Finished training it 170/170 of epoch 4 and time taken 26.472630500793457, 21.44 ms/it, loss 0.600810, accuracy 67.476 %
+DLRM_wrap_time 7.55, loss_fn_time 0.20, Backward_pass_time  8.37, Average_Grad_time 4.19, Optimizer_step_time 0.93
+Finished epoch 4
+Finished training it 100/170 of epoch 5 and time taken 29.204963207244873, 21.30 ms/it, loss 0.585874, accuracy 68.729 %
+DLRM_wrap_time 7.59, loss_fn_time 0.20, Backward_pass_time  8.16, Average_Grad_time 4.22, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 5, loss 0.532285, accuracy 75.095 %, best 75.095 %
+Finished training it 170/170 of epoch 5 and time taken 31.33385396003723, 21.14 ms/it, loss 0.597135, accuracy 67.877 %
+DLRM_wrap_time 7.63, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.95, Optimizer_step_time 0.94
+Finished epoch 5
+Finished training it 100/170 of epoch 6 and time taken 34.05238485336304, 21.15 ms/it, loss 0.589987, accuracy 68.684 %
+DLRM_wrap_time 7.59, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 4.01, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 6, loss 0.607573, accuracy 66.380 %, best 75.095 %
+Finished training it 170/170 of epoch 6 and time taken 36.193214416503906, 21.38 ms/it, loss 0.576372, accuracy 71.146 %
+DLRM_wrap_time 7.67, loss_fn_time 0.22, Backward_pass_time  8.15, Average_Grad_time 4.21, Optimizer_step_time 0.94
+Finished epoch 6
+Finished training it 100/170 of epoch 7 and time taken 38.91479420661926, 21.18 ms/it, loss 0.538748, accuracy 73.025 %
+DLRM_wrap_time 7.61, loss_fn_time 0.21, Backward_pass_time  8.19, Average_Grad_time 4.05, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 7, loss 0.421597, accuracy 82.103 %, best 82.103 %
+Finished training it 170/170 of epoch 7 and time taken 41.04431676864624, 21.22 ms/it, loss 0.530983, accuracy 73.223 %
+DLRM_wrap_time 7.65, loss_fn_time 0.21, Backward_pass_time  8.27, Average_Grad_time 3.96, Optimizer_step_time 0.94
+Finished epoch 7
+Finished training it 100/170 of epoch 8 and time taken 43.7751669883728, 21.25 ms/it, loss 0.516524, accuracy 74.514 %
+DLRM_wrap_time 7.63, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 4.08, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 8, loss 0.860483, accuracy 58.015 %, best 82.103 %
+Finished training it 170/170 of epoch 8 and time taken 45.90021276473999, 21.10 ms/it, loss 0.517660, accuracy 75.329 %
+DLRM_wrap_time 7.62, loss_fn_time 0.21, Backward_pass_time  8.06, Average_Grad_time 4.09, Optimizer_step_time 0.93
+Finished epoch 8
+Finished training it 100/170 of epoch 9 and time taken 48.60568165779114, 21.01 ms/it, loss 0.516334, accuracy 75.916 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.15, Average_Grad_time 3.93, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 9, loss 0.428338, accuracy 83.640 %, best 83.640 %
+Finished training it 170/170 of epoch 9 and time taken 50.74076437950134, 21.37 ms/it, loss 0.497308, accuracy 76.891 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 4.14, Optimizer_step_time 0.94
+Finished epoch 9
+Finished training it 100/170 of epoch 10 and time taken 53.469114542007446, 21.18 ms/it, loss 0.487748, accuracy 76.111 %
+DLRM_wrap_time 7.63, loss_fn_time 0.22, Backward_pass_time  8.15, Average_Grad_time 4.06, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 10, loss 0.565189, accuracy 68.199 %, best 83.640 %
+Finished training it 170/170 of epoch 10 and time taken 55.59957003593445, 21.20 ms/it, loss 0.476105, accuracy 75.895 %
+DLRM_wrap_time 7.57, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 4.03, Optimizer_step_time 0.94
+Finished epoch 10
+Finished training it 100/170 of epoch 11 and time taken 58.33666133880615, 21.31 ms/it, loss 0.471273, accuracy 77.248 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 4.08, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 11, loss 0.496792, accuracy 72.922 %, best 83.640 %
+Finished training it 170/170 of epoch 11 and time taken 60.475199460983276, 21.28 ms/it, loss 0.462886, accuracy 78.136 %
+DLRM_wrap_time 7.61, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 4.07, Optimizer_step_time 0.94
+Finished epoch 11
+Finished training it 100/170 of epoch 12 and time taken 63.21078658103943, 21.24 ms/it, loss 0.450324, accuracy 78.457 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 4.07, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 12, loss 0.831575, accuracy 59.767 %, best 83.640 %
+Finished training it 170/170 of epoch 12 and time taken 65.3473289012909, 21.42 ms/it, loss 0.457621, accuracy 78.701 %
+DLRM_wrap_time 7.61, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 4.21, Optimizer_step_time 0.94
+Finished epoch 12
+Finished training it 100/170 of epoch 13 and time taken 68.10268092155457, 21.57 ms/it, loss 0.436238, accuracy 79.252 %
+DLRM_wrap_time 7.48, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 4.56, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 13, loss 0.366491, accuracy 83.199 %, best 83.640 %
+Finished training it 170/170 of epoch 13 and time taken 70.22846150398254, 21.21 ms/it, loss 0.439020, accuracy 79.813 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.16, Average_Grad_time 4.07, Optimizer_step_time 0.94
+Finished epoch 13
+Finished training it 100/170 of epoch 14 and time taken 72.96887826919556, 21.28 ms/it, loss 0.427022, accuracy 80.404 %
+DLRM_wrap_time 7.67, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 4.01, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 14, loss 0.393717, accuracy 81.473 %, best 83.640 %
+Finished training it 170/170 of epoch 14 and time taken 75.09425139427185, 21.29 ms/it, loss 0.432091, accuracy 81.277 %
+DLRM_wrap_time 7.58, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 4.13, Optimizer_step_time 0.93
+Finished epoch 14
+Finished training it 100/170 of epoch 15 and time taken 77.83980941772461, 21.41 ms/it, loss 0.435938, accuracy 79.973 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.19, Average_Grad_time 4.31, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 15, loss 0.441146, accuracy 83.887 %, best 83.887 %
+Finished training it 170/170 of epoch 15 and time taken 79.95563340187073, 21.17 ms/it, loss 0.417567, accuracy 80.261 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.04, Average_Grad_time 4.19, Optimizer_step_time 0.94
+Finished epoch 15
+Finished training it 100/170 of epoch 16 and time taken 82.69290566444397, 21.30 ms/it, loss 0.426910, accuracy 79.736 %
+DLRM_wrap_time 7.59, loss_fn_time 0.22, Backward_pass_time  8.27, Average_Grad_time 4.09, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 16, loss 0.377841, accuracy 81.935 %, best 83.887 %
+Finished training it 170/170 of epoch 16 and time taken 84.85920214653015, 21.90 ms/it, loss 0.423966, accuracy 79.760 %
+DLRM_wrap_time 7.49, loss_fn_time 0.21, Backward_pass_time  8.15, Average_Grad_time 4.93, Optimizer_step_time 0.92
+Finished epoch 16
+Finished training it 100/170 of epoch 17 and time taken 87.55854225158691, 20.83 ms/it, loss 0.418095, accuracy 80.332 %
+DLRM_wrap_time 7.70, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.53, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 17, loss 0.395377, accuracy 79.461 %, best 83.887 %
+Finished training it 170/170 of epoch 17 and time taken 89.67558574676514, 20.92 ms/it, loss 0.402835, accuracy 81.231 %
+DLRM_wrap_time 7.73, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.57, Optimizer_step_time 0.95
+Finished epoch 17
+Finished training it 100/170 of epoch 18 and time taken 92.36846852302551, 20.83 ms/it, loss 0.409744, accuracy 80.809 %
+DLRM_wrap_time 7.68, loss_fn_time 0.22, Backward_pass_time  8.23, Average_Grad_time 3.57, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 18, loss 0.386769, accuracy 82.518 %, best 83.887 %
+Finished training it 170/170 of epoch 18 and time taken 94.47711610794067, 20.87 ms/it, loss 0.389112, accuracy 81.018 %
+DLRM_wrap_time 7.69, loss_fn_time 0.21, Backward_pass_time  8.28, Average_Grad_time 3.55, Optimizer_step_time 0.94
+Finished epoch 18
+Finished training it 100/170 of epoch 19 and time taken 97.16443848609924, 20.81 ms/it, loss 0.388664, accuracy 81.396 %
+DLRM_wrap_time 7.67, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.56, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 19, loss 0.316989, accuracy 87.360 %, best 87.360 %
+Finished training it 170/170 of epoch 19 and time taken 99.28459882736206, 20.94 ms/it, loss 0.389034, accuracy 81.820 %
+DLRM_wrap_time 7.75, loss_fn_time 0.22, Backward_pass_time  8.29, Average_Grad_time 3.55, Optimizer_step_time 0.94
+Finished epoch 19
+Finished training it 100/170 of epoch 20 and time taken 101.97173953056335, 20.79 ms/it, loss 0.394219, accuracy 82.096 %
+DLRM_wrap_time 7.65, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.56, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 20, loss 0.340379, accuracy 86.815 %, best 87.360 %
+Finished training it 170/170 of epoch 20 and time taken 104.07014608383179, 20.83 ms/it, loss 0.377608, accuracy 82.011 %
+DLRM_wrap_time 7.67, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.58, Optimizer_step_time 0.93
+Finished epoch 20
+Finished training it 100/170 of epoch 21 and time taken 106.77183604240417, 20.89 ms/it, loss 0.385590, accuracy 81.693 %
+DLRM_wrap_time 7.70, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.58, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 21, loss 0.385116, accuracy 82.819 %, best 87.360 %
+Finished training it 170/170 of epoch 21 and time taken 108.88732767105103, 20.89 ms/it, loss 0.374013, accuracy 82.828 %
+DLRM_wrap_time 7.78, loss_fn_time 0.22, Backward_pass_time  8.23, Average_Grad_time 3.52, Optimizer_step_time 0.95
+Finished epoch 21
+Finished training it 100/170 of epoch 22 and time taken 111.56119108200073, 20.63 ms/it, loss 0.373482, accuracy 82.078 %
+DLRM_wrap_time 7.69, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.35, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 22, loss 0.344465, accuracy 82.812 %, best 87.360 %
+Finished training it 170/170 of epoch 22 and time taken 113.6425313949585, 20.62 ms/it, loss 0.370931, accuracy 83.223 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.37, Optimizer_step_time 0.94
+Finished epoch 22
+Finished training it 100/170 of epoch 23 and time taken 116.31567049026489, 20.66 ms/it, loss 0.374378, accuracy 82.395 %
+DLRM_wrap_time 7.68, loss_fn_time 0.22, Backward_pass_time  8.28, Average_Grad_time 3.35, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 23, loss 0.315744, accuracy 88.320 %, best 88.320 %
+Finished training it 170/170 of epoch 23 and time taken 118.40203523635864, 20.56 ms/it, loss 0.365037, accuracy 82.895 %
+DLRM_wrap_time 7.65, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.31, Optimizer_step_time 0.94
+Finished epoch 23
+Finished training it 100/170 of epoch 24 and time taken 121.08003211021423, 20.67 ms/it, loss 0.369191, accuracy 82.811 %
+DLRM_wrap_time 7.70, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.37, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 24, loss 0.325880, accuracy 86.133 %, best 88.320 %
+Finished training it 170/170 of epoch 24 and time taken 123.16357922554016, 20.63 ms/it, loss 0.361230, accuracy 82.554 %
+DLRM_wrap_time 7.71, loss_fn_time 0.22, Backward_pass_time  8.27, Average_Grad_time 3.32, Optimizer_step_time 0.94
+Finished epoch 24
+Finished training it 100/170 of epoch 25 and time taken 125.82509255409241, 20.54 ms/it, loss 0.369186, accuracy 83.299 %
+DLRM_wrap_time 7.65, loss_fn_time 0.22, Backward_pass_time  8.24, Average_Grad_time 3.31, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 25, loss 0.298092, accuracy 87.589 %, best 88.320 %
+Finished training it 170/170 of epoch 25 and time taken 127.91179275512695, 20.65 ms/it, loss 0.358601, accuracy 82.952 %
+DLRM_wrap_time 7.70, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.36, Optimizer_step_time 0.94
+Finished epoch 25
+Finished training it 100/170 of epoch 26 and time taken 130.58085751533508, 20.59 ms/it, loss 0.357586, accuracy 83.541 %
+DLRM_wrap_time 7.69, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.32, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 26, loss 0.336986, accuracy 85.092 %, best 88.320 %
+Finished training it 170/170 of epoch 26 and time taken 132.67409443855286, 20.72 ms/it, loss 0.354056, accuracy 83.219 %
+DLRM_wrap_time 7.74, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.36, Optimizer_step_time 0.95
+Finished epoch 26
+Finished training it 100/170 of epoch 27 and time taken 135.35819578170776, 20.69 ms/it, loss 0.355125, accuracy 83.248 %
+DLRM_wrap_time 7.72, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.35, Optimizer_step_time 0.95
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 27, loss 0.297790, accuracy 86.710 %, best 88.320 %
+Finished training it 170/170 of epoch 27 and time taken 137.44747829437256, 20.61 ms/it, loss 0.340918, accuracy 83.752 %
+DLRM_wrap_time 7.69, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.34, Optimizer_step_time 0.94
+Finished epoch 27
+Finished training it 100/170 of epoch 28 and time taken 140.1188793182373, 20.59 ms/it, loss 0.354719, accuracy 83.830 %
+DLRM_wrap_time 7.68, loss_fn_time 0.22, Backward_pass_time  8.22, Average_Grad_time 3.33, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 28, loss 0.313443, accuracy 88.166 %, best 88.320 %
+Finished training it 170/170 of epoch 28 and time taken 142.2014353275299, 20.66 ms/it, loss 0.344778, accuracy 84.359 %
+DLRM_wrap_time 7.65, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.41, Optimizer_step_time 0.94
+Finished epoch 28
+Finished training it 100/170 of epoch 29 and time taken 144.86989903450012, 20.58 ms/it, loss 0.345407, accuracy 83.918 %
+DLRM_wrap_time 7.71, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.32, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 29, loss 0.290124, accuracy 88.038 %, best 88.320 %
+Finished training it 170/170 of epoch 29 and time taken 146.9665184020996, 20.68 ms/it, loss 0.333374, accuracy 84.378 %
+DLRM_wrap_time 7.73, loss_fn_time 0.22, Backward_pass_time  8.27, Average_Grad_time 3.32, Optimizer_step_time 0.95
+Finished epoch 29
+Finished training it 100/170 of epoch 30 and time taken 149.62475728988647, 20.47 ms/it, loss 0.342676, accuracy 83.754 %
+DLRM_wrap_time 7.57, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.32, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 30, loss 0.285738, accuracy 88.189 %, best 88.320 %
+Finished training it 170/170 of epoch 30 and time taken 151.6929967403412, 20.37 ms/it, loss 0.341750, accuracy 85.116 %
+DLRM_wrap_time 7.51, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.33, Optimizer_step_time 0.92
+Finished epoch 30
+Finished training it 100/170 of epoch 31 and time taken 154.347229719162, 20.44 ms/it, loss 0.337946, accuracy 85.012 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.30, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 31, loss 0.278638, accuracy 88.054 %, best 88.320 %
+Finished training it 170/170 of epoch 31 and time taken 156.41463041305542, 20.46 ms/it, loss 0.338444, accuracy 84.164 %
+DLRM_wrap_time 7.51, loss_fn_time 0.22, Backward_pass_time  8.23, Average_Grad_time 3.40, Optimizer_step_time 0.92
+Finished epoch 31
+Finished training it 100/170 of epoch 32 and time taken 159.06030893325806, 20.40 ms/it, loss 0.334518, accuracy 84.736 %
+DLRM_wrap_time 7.53, loss_fn_time 0.21, Backward_pass_time  8.19, Average_Grad_time 3.36, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 32, loss 0.265656, accuracy 89.655 %, best 89.655 %
+Finished training it 170/170 of epoch 32 and time taken 161.13430213928223, 20.48 ms/it, loss 0.341807, accuracy 85.731 %
+DLRM_wrap_time 7.55, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.38, Optimizer_step_time 0.92
+Finished epoch 32
+Finished training it 100/170 of epoch 33 and time taken 163.78045439720154, 20.42 ms/it, loss 0.336561, accuracy 83.811 %
+DLRM_wrap_time 7.57, loss_fn_time 0.21, Backward_pass_time  8.16, Average_Grad_time 3.38, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 33, loss 0.285870, accuracy 87.106 %, best 89.655 %
+Finished training it 170/170 of epoch 33 and time taken 165.85148334503174, 20.45 ms/it, loss 0.323140, accuracy 85.963 %
+DLRM_wrap_time 7.55, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.31, Optimizer_step_time 0.92
+Finished epoch 33
+Finished training it 100/170 of epoch 34 and time taken 168.5161156654358, 20.51 ms/it, loss 0.331373, accuracy 83.812 %
+DLRM_wrap_time 7.58, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.33, Optimizer_step_time 0.95
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 34, loss 0.397734, accuracy 80.593 %, best 89.655 %
+Finished training it 170/170 of epoch 34 and time taken 170.58413290977478, 20.32 ms/it, loss 0.325056, accuracy 85.714 %
+DLRM_wrap_time 7.49, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.30, Optimizer_step_time 0.92
+Finished epoch 34
+Finished training it 100/170 of epoch 35 and time taken 173.22332620620728, 20.33 ms/it, loss 0.329907, accuracy 84.242 %
+DLRM_wrap_time 7.50, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.31, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 35, loss 0.312055, accuracy 86.739 %, best 89.655 %
+Finished training it 170/170 of epoch 35 and time taken 175.2769377231598, 20.35 ms/it, loss 0.312441, accuracy 85.327 %
+DLRM_wrap_time 7.50, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 3.34, Optimizer_step_time 0.91
+Finished epoch 35
+Finished training it 100/170 of epoch 36 and time taken 177.91639876365662, 20.34 ms/it, loss 0.325671, accuracy 85.176 %
+DLRM_wrap_time 7.50, loss_fn_time 0.21, Backward_pass_time  8.19, Average_Grad_time 3.33, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 36, loss 0.272307, accuracy 88.666 %, best 89.655 %
+Finished training it 170/170 of epoch 36 and time taken 179.9820237159729, 20.40 ms/it, loss 0.315901, accuracy 85.184 %
+DLRM_wrap_time 7.47, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.36, Optimizer_step_time 0.92
+Finished epoch 36
+Finished training it 100/170 of epoch 37 and time taken 182.61536288261414, 20.26 ms/it, loss 0.323647, accuracy 84.859 %
+DLRM_wrap_time 7.47, loss_fn_time 0.21, Backward_pass_time  8.17, Average_Grad_time 3.31, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 37, loss 0.346207, accuracy 83.318 %, best 89.655 %
+Finished training it 170/170 of epoch 37 and time taken 184.68042087554932, 20.33 ms/it, loss 0.313561, accuracy 85.604 %
+DLRM_wrap_time 7.53, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.27, Optimizer_step_time 0.93
+Finished epoch 37
+Finished training it 100/170 of epoch 38 and time taken 187.3239357471466, 20.31 ms/it, loss 0.317850, accuracy 85.953 %
+DLRM_wrap_time 7.52, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.25, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 38, loss 0.288165, accuracy 86.382 %, best 89.655 %
+Finished training it 170/170 of epoch 38 and time taken 189.39543843269348, 20.38 ms/it, loss 0.313129, accuracy 85.468 %
+DLRM_wrap_time 7.51, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.32, Optimizer_step_time 0.92
+Finished epoch 38
+Finished training it 100/170 of epoch 39 and time taken 192.02821564674377, 20.25 ms/it, loss 0.325371, accuracy 84.869 %
+DLRM_wrap_time 7.46, loss_fn_time 0.21, Backward_pass_time  8.15, Average_Grad_time 3.33, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 39, loss 0.299832, accuracy 85.827 %, best 89.655 %
+Finished training it 170/170 of epoch 39 and time taken 194.10069847106934, 20.38 ms/it, loss 0.313098, accuracy 85.888 %
+DLRM_wrap_time 7.49, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.33, Optimizer_step_time 0.92
+Finished epoch 39
+Finished training it 100/170 of epoch 40 and time taken 196.75850987434387, 20.47 ms/it, loss 0.317973, accuracy 85.137 %
+DLRM_wrap_time 7.55, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.38, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 40, loss 0.352409, accuracy 83.000 %, best 89.655 %
+Finished training it 170/170 of epoch 40 and time taken 198.84799075126648, 20.67 ms/it, loss 0.306417, accuracy 86.164 %
+DLRM_wrap_time 7.53, loss_fn_time 0.22, Backward_pass_time  8.24, Average_Grad_time 3.57, Optimizer_step_time 0.92
+Finished epoch 40
+Finished training it 100/170 of epoch 41 and time taken 201.52251505851746, 20.64 ms/it, loss 0.309461, accuracy 86.096 %
+DLRM_wrap_time 7.50, loss_fn_time 0.22, Backward_pass_time  8.24, Average_Grad_time 3.57, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 41, loss 0.352947, accuracy 83.395 %, best 89.655 %
+Finished training it 170/170 of epoch 41 and time taken 203.59784245491028, 20.53 ms/it, loss 0.304706, accuracy 85.646 %
+DLRM_wrap_time 7.47, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 3.54, Optimizer_step_time 0.92
+Finished epoch 41
+Finished training it 100/170 of epoch 42 and time taken 206.25722217559814, 20.54 ms/it, loss 0.315500, accuracy 85.826 %
+DLRM_wrap_time 7.48, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 3.54, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 42, loss 0.308219, accuracy 86.346 %, best 89.655 %
+Finished training it 170/170 of epoch 42 and time taken 208.33189702033997, 20.57 ms/it, loss 0.304691, accuracy 85.897 %
+DLRM_wrap_time 7.46, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.57, Optimizer_step_time 0.92
+Finished epoch 42
+Finished training it 100/170 of epoch 43 and time taken 210.98874735832214, 20.52 ms/it, loss 0.312128, accuracy 85.139 %
+DLRM_wrap_time 7.46, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.52, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 43, loss 0.303556, accuracy 85.512 %, best 89.655 %
+Finished training it 170/170 of epoch 43 and time taken 213.0613875389099, 20.52 ms/it, loss 0.303711, accuracy 86.216 %
+DLRM_wrap_time 7.50, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.49, Optimizer_step_time 0.92
+Finished epoch 43
+Finished training it 100/170 of epoch 44 and time taken 215.7122392654419, 20.48 ms/it, loss 0.311303, accuracy 85.492 %
+DLRM_wrap_time 7.45, loss_fn_time 0.21, Backward_pass_time  8.19, Average_Grad_time 3.52, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 44, loss 0.262837, accuracy 88.976 %, best 89.655 %
+Finished training it 170/170 of epoch 44 and time taken 217.7881326675415, 20.54 ms/it, loss 0.292593, accuracy 86.309 %
+DLRM_wrap_time 7.48, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.49, Optimizer_step_time 0.92
+Finished epoch 44
+Finished training it 100/170 of epoch 45 and time taken 220.4449269771576, 20.50 ms/it, loss 0.310500, accuracy 85.801 %
+DLRM_wrap_time 7.48, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.49, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 45, loss 0.244729, accuracy 89.867 %, best 89.867 %
+Finished training it 170/170 of epoch 45 and time taken 222.51340556144714, 20.48 ms/it, loss 0.295300, accuracy 86.143 %
+DLRM_wrap_time 7.47, loss_fn_time 0.21, Backward_pass_time  8.19, Average_Grad_time 3.51, Optimizer_step_time 0.91
+Finished epoch 45
+Finished training it 100/170 of epoch 46 and time taken 225.1770224571228, 20.54 ms/it, loss 0.302488, accuracy 85.949 %
+DLRM_wrap_time 7.53, loss_fn_time 0.21, Backward_pass_time  8.18, Average_Grad_time 3.51, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 46, loss 0.293504, accuracy 88.570 %, best 89.867 %
+Finished training it 170/170 of epoch 46 and time taken 227.25744247436523, 20.60 ms/it, loss 0.292422, accuracy 86.471 %
+DLRM_wrap_time 7.53, loss_fn_time 0.20, Backward_pass_time  8.23, Average_Grad_time 3.53, Optimizer_step_time 0.92
+Finished epoch 46
+Finished training it 100/170 of epoch 47 and time taken 229.9118218421936, 20.48 ms/it, loss 0.303483, accuracy 86.418 %
+DLRM_wrap_time 7.50, loss_fn_time 0.21, Backward_pass_time  8.16, Average_Grad_time 3.50, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 47, loss 0.254292, accuracy 90.542 %, best 90.542 %
+Finished training it 170/170 of epoch 47 and time taken 231.97574949264526, 20.43 ms/it, loss 0.291547, accuracy 86.642 %
+DLRM_wrap_time 7.43, loss_fn_time 0.20, Backward_pass_time  8.19, Average_Grad_time 3.51, Optimizer_step_time 0.91
+Finished epoch 47
+Finished training it 100/170 of epoch 48 and time taken 234.62052655220032, 20.48 ms/it, loss 0.297101, accuracy 85.982 %
+DLRM_wrap_time 7.46, loss_fn_time 0.20, Backward_pass_time  8.19, Average_Grad_time 3.53, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 48, loss 0.231302, accuracy 90.773 %, best 90.773 %
+Finished training it 170/170 of epoch 48 and time taken 236.67634987831116, 20.37 ms/it, loss 0.290801, accuracy 86.648 %
+DLRM_wrap_time 7.42, loss_fn_time 0.20, Backward_pass_time  8.17, Average_Grad_time 3.49, Optimizer_step_time 0.91
+Finished epoch 48
+Finished training it 100/170 of epoch 49 and time taken 239.31546473503113, 20.42 ms/it, loss 0.304710, accuracy 86.426 %
+DLRM_wrap_time 7.42, loss_fn_time 0.20, Backward_pass_time  8.19, Average_Grad_time 3.51, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 49, loss 0.242341, accuracy 89.965 %, best 90.773 %
+Finished training it 170/170 of epoch 49 and time taken 241.38138389587402, 20.54 ms/it, loss 0.289290, accuracy 86.691 %
+DLRM_wrap_time 7.47, loss_fn_time 0.20, Backward_pass_time  8.23, Average_Grad_time 3.54, Optimizer_step_time 0.91
+Finished epoch 49
+Finished training it 100/170 of epoch 50 and time taken 244.0255880355835, 20.44 ms/it, loss 0.299037, accuracy 86.283 %
+DLRM_wrap_time 7.43, loss_fn_time 0.20, Backward_pass_time  8.17, Average_Grad_time 3.54, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 50, loss 0.229966, accuracy 90.701 %, best 90.773 %
+Finished training it 170/170 of epoch 50 and time taken 246.0856077671051, 20.41 ms/it, loss 0.281819, accuracy 86.792 %
+DLRM_wrap_time 7.40, loss_fn_time 0.20, Backward_pass_time  8.20, Average_Grad_time 3.53, Optimizer_step_time 0.91
+Finished epoch 50
+Finished training it 100/170 of epoch 51 and time taken 248.7280445098877, 20.43 ms/it, loss 0.298003, accuracy 86.570 %
+DLRM_wrap_time 7.39, loss_fn_time 0.20, Backward_pass_time  8.20, Average_Grad_time 3.55, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 51, loss 0.225783, accuracy 90.950 %, best 90.950 %
+Finished training it 170/170 of epoch 51 and time taken 250.79617404937744, 20.51 ms/it, loss 0.291108, accuracy 86.683 %
+DLRM_wrap_time 7.47, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.53, Optimizer_step_time 0.91
+Finished epoch 51
+Finished training it 100/170 of epoch 52 and time taken 253.46097326278687, 20.56 ms/it, loss 0.290213, accuracy 87.199 %
+DLRM_wrap_time 7.52, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.49, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 52, loss 0.289389, accuracy 85.198 %, best 90.950 %
+Finished training it 170/170 of epoch 52 and time taken 255.53424453735352, 20.55 ms/it, loss 0.278395, accuracy 86.916 %
+DLRM_wrap_time 7.53, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.51, Optimizer_step_time 0.91
+Finished epoch 52
+Finished training it 100/170 of epoch 53 and time taken 258.1935098171234, 20.53 ms/it, loss 0.304132, accuracy 86.533 %
+DLRM_wrap_time 7.51, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.50, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 53, loss 0.273105, accuracy 88.051 %, best 90.950 %
+Finished training it 170/170 of epoch 53 and time taken 260.26283383369446, 20.46 ms/it, loss 0.281481, accuracy 86.917 %
+DLRM_wrap_time 7.52, loss_fn_time 0.21, Backward_pass_time  8.16, Average_Grad_time 3.47, Optimizer_step_time 0.92
+Finished epoch 53
+Finished training it 100/170 of epoch 54 and time taken 262.9244132041931, 20.55 ms/it, loss 0.296097, accuracy 87.287 %
+DLRM_wrap_time 7.54, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.47, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 54, loss 0.238282, accuracy 89.149 %, best 90.950 %
+Finished training it 170/170 of epoch 54 and time taken 265.01369309425354, 20.62 ms/it, loss 0.289268, accuracy 86.689 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.46, Optimizer_step_time 0.94
+Finished epoch 54
+Finished training it 100/170 of epoch 55 and time taken 267.6772606372833, 20.54 ms/it, loss 0.287943, accuracy 87.139 %
+DLRM_wrap_time 7.52, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.49, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 55, loss 0.320124, accuracy 84.987 %, best 90.950 %
+Finished training it 170/170 of epoch 55 and time taken 269.8166091442108, 20.92 ms/it, loss 0.274181, accuracy 87.173 %
+DLRM_wrap_time 7.87, loss_fn_time 0.22, Backward_pass_time  8.29, Average_Grad_time 3.38, Optimizer_step_time 0.97
+Finished epoch 55
+Finished training it 100/170 of epoch 56 and time taken 272.5197775363922, 20.78 ms/it, loss 0.285528, accuracy 87.275 %
+DLRM_wrap_time 7.74, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.46, Optimizer_step_time 0.95
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 56, loss 0.240781, accuracy 89.813 %, best 90.950 %
+Finished training it 170/170 of epoch 56 and time taken 274.62051272392273, 20.75 ms/it, loss 0.274968, accuracy 87.550 %
+DLRM_wrap_time 7.63, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.52, Optimizer_step_time 0.94
+Finished epoch 56
+Finished training it 100/170 of epoch 57 and time taken 277.30481457710266, 20.65 ms/it, loss 0.285427, accuracy 87.490 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.49, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 57, loss 0.217557, accuracy 90.768 %, best 90.950 %
+Finished training it 170/170 of epoch 57 and time taken 279.40120577812195, 20.68 ms/it, loss 0.283154, accuracy 86.947 %
+DLRM_wrap_time 7.60, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.49, Optimizer_step_time 0.94
+Finished epoch 57
+Finished training it 100/170 of epoch 58 and time taken 282.0785620212555, 20.66 ms/it, loss 0.283980, accuracy 87.049 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.50, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 58, loss 0.330835, accuracy 83.898 %, best 90.950 %
+Finished training it 170/170 of epoch 58 and time taken 284.1570014953613, 20.55 ms/it, loss 0.272074, accuracy 87.583 %
+DLRM_wrap_time 7.59, loss_fn_time 0.21, Backward_pass_time  8.13, Average_Grad_time 3.49, Optimizer_step_time 0.93
+Finished epoch 58
+Finished training it 100/170 of epoch 59 and time taken 286.83272314071655, 20.64 ms/it, loss 0.277750, accuracy 87.219 %
+DLRM_wrap_time 7.59, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.47, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 59, loss 0.227741, accuracy 90.325 %, best 90.950 %
+Finished training it 170/170 of epoch 59 and time taken 288.9197516441345, 20.60 ms/it, loss 0.271064, accuracy 87.651 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 3.48, Optimizer_step_time 0.93
+Finished epoch 59
+Finished training it 100/170 of epoch 60 and time taken 291.6083183288574, 20.72 ms/it, loss 0.280068, accuracy 87.840 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.51, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 60, loss 0.226553, accuracy 91.091 %, best 91.091 %
+Finished training it 170/170 of epoch 60 and time taken 293.7031743526459, 20.69 ms/it, loss 0.272868, accuracy 87.403 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.46, Optimizer_step_time 0.93
+Finished epoch 60
+Finished training it 100/170 of epoch 61 and time taken 296.37694358825684, 20.60 ms/it, loss 0.282390, accuracy 87.695 %
+DLRM_wrap_time 7.59, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.44, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 61, loss 0.214625, accuracy 91.413 %, best 91.413 %
+Finished training it 170/170 of epoch 61 and time taken 298.4670195579529, 20.62 ms/it, loss 0.266626, accuracy 87.919 %
+DLRM_wrap_time 7.61, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.42, Optimizer_step_time 0.93
+Finished epoch 61
+Finished training it 100/170 of epoch 62 and time taken 301.1411552429199, 20.62 ms/it, loss 0.285391, accuracy 86.875 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.44, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 62, loss 0.227573, accuracy 90.707 %, best 91.413 %
+Finished training it 170/170 of epoch 62 and time taken 303.23600125312805, 20.72 ms/it, loss 0.270971, accuracy 87.899 %
+DLRM_wrap_time 7.69, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.42, Optimizer_step_time 0.94
+Finished epoch 62
+Finished training it 100/170 of epoch 63 and time taken 305.9117841720581, 20.62 ms/it, loss 0.283618, accuracy 87.559 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.44, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 63, loss 0.367328, accuracy 82.368 %, best 91.413 %
+Finished training it 170/170 of epoch 63 and time taken 308.0056359767914, 20.66 ms/it, loss 0.263389, accuracy 87.874 %
+DLRM_wrap_time 7.63, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.45, Optimizer_step_time 0.93
+Finished epoch 63
+Finished training it 100/170 of epoch 64 and time taken 310.67617869377136, 20.60 ms/it, loss 0.278938, accuracy 87.539 %
+DLRM_wrap_time 7.56, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.46, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 64, loss 0.339546, accuracy 83.680 %, best 91.413 %
+Finished training it 170/170 of epoch 64 and time taken 312.75511384010315, 20.57 ms/it, loss 0.264774, accuracy 87.856 %
+DLRM_wrap_time 7.55, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.45, Optimizer_step_time 0.93
+Finished epoch 64
+Finished training it 100/170 of epoch 65 and time taken 315.4245057106018, 20.57 ms/it, loss 0.272072, accuracy 87.930 %
+DLRM_wrap_time 7.51, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.54, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 65, loss 0.267065, accuracy 87.869 %, best 91.413 %
+Finished training it 170/170 of epoch 65 and time taken 317.50569891929626, 20.59 ms/it, loss 0.260097, accuracy 88.064 %
+DLRM_wrap_time 7.46, loss_fn_time 0.20, Backward_pass_time  8.23, Average_Grad_time 3.60, Optimizer_step_time 0.92
+Finished epoch 65
+Finished training it 100/170 of epoch 66 and time taken 320.1700096130371, 20.58 ms/it, loss 0.270109, accuracy 88.020 %
+DLRM_wrap_time 7.47, loss_fn_time 0.20, Backward_pass_time  8.23, Average_Grad_time 3.57, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 66, loss 0.600610, accuracy 73.649 %, best 91.413 %
+Finished training it 170/170 of epoch 66 and time taken 322.25168800354004, 20.61 ms/it, loss 0.265787, accuracy 87.905 %
+DLRM_wrap_time 7.48, loss_fn_time 0.20, Backward_pass_time  8.24, Average_Grad_time 3.58, Optimizer_step_time 0.92
+Finished epoch 66
+Finished training it 100/170 of epoch 67 and time taken 324.90771198272705, 20.48 ms/it, loss 0.274028, accuracy 88.047 %
+DLRM_wrap_time 7.47, loss_fn_time 0.20, Backward_pass_time  8.14, Average_Grad_time 3.56, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 67, loss 0.348929, accuracy 80.117 %, best 91.413 %
+Finished training it 170/170 of epoch 67 and time taken 326.98359966278076, 20.58 ms/it, loss 0.260965, accuracy 87.824 %
+DLRM_wrap_time 7.46, loss_fn_time 0.20, Backward_pass_time  8.24, Average_Grad_time 3.58, Optimizer_step_time 0.92
+Finished epoch 67
+Finished training it 100/170 of epoch 68 and time taken 329.64621114730835, 20.56 ms/it, loss 0.275910, accuracy 87.389 %
+DLRM_wrap_time 7.48, loss_fn_time 0.20, Backward_pass_time  8.19, Average_Grad_time 3.58, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 68, loss 0.239229, accuracy 91.333 %, best 91.413 %
+Finished training it 170/170 of epoch 68 and time taken 331.7350494861603, 20.63 ms/it, loss 0.254086, accuracy 88.457 %
+DLRM_wrap_time 7.49, loss_fn_time 0.20, Backward_pass_time  8.22, Average_Grad_time 3.61, Optimizer_step_time 0.92
+Finished epoch 68
+Finished training it 100/170 of epoch 69 and time taken 334.38767743110657, 20.52 ms/it, loss 0.276335, accuracy 87.693 %
+DLRM_wrap_time 7.43, loss_fn_time 0.20, Backward_pass_time  8.22, Average_Grad_time 3.58, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 69, loss 0.310516, accuracy 85.521 %, best 91.413 %
+Finished training it 170/170 of epoch 69 and time taken 336.4548137187958, 20.57 ms/it, loss 0.242765, accuracy 88.852 %
+DLRM_wrap_time 7.43, loss_fn_time 0.20, Backward_pass_time  8.20, Average_Grad_time 3.64, Optimizer_step_time 0.91
+Finished epoch 69
+Finished training it 100/170 of epoch 70 and time taken 339.1100823879242, 20.51 ms/it, loss 0.262682, accuracy 88.396 %
+DLRM_wrap_time 7.43, loss_fn_time 0.20, Backward_pass_time  8.21, Average_Grad_time 3.58, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 70, loss 0.234303, accuracy 88.907 %, best 91.413 %
+Finished training it 170/170 of epoch 70 and time taken 341.1602292060852, 20.39 ms/it, loss 0.266031, accuracy 87.758 %
+DLRM_wrap_time 7.35, loss_fn_time 0.20, Backward_pass_time  8.18, Average_Grad_time 3.58, Optimizer_step_time 0.90
+Finished epoch 70
+Finished training it 100/170 of epoch 71 and time taken 343.7859025001526, 20.31 ms/it, loss 0.268562, accuracy 87.994 %
+DLRM_wrap_time 7.31, loss_fn_time 0.20, Backward_pass_time  8.15, Average_Grad_time 3.57, Optimizer_step_time 0.90
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 71, loss 0.325038, accuracy 84.409 %, best 91.413 %
+Finished training it 170/170 of epoch 71 and time taken 345.84481048583984, 20.43 ms/it, loss 0.265922, accuracy 88.375 %
+DLRM_wrap_time 7.37, loss_fn_time 0.20, Backward_pass_time  8.20, Average_Grad_time 3.57, Optimizer_step_time 0.91
+Finished epoch 71
+Finished training it 100/170 of epoch 72 and time taken 348.47381353378296, 20.42 ms/it, loss 0.259866, accuracy 88.070 %
+DLRM_wrap_time 7.32, loss_fn_time 0.20, Backward_pass_time  8.17, Average_Grad_time 3.66, Optimizer_step_time 0.90
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 72, loss 0.218753, accuracy 90.745 %, best 91.413 %
+Finished training it 170/170 of epoch 72 and time taken 350.5353009700775, 20.54 ms/it, loss 0.259006, accuracy 88.566 %
+DLRM_wrap_time 7.40, loss_fn_time 0.20, Backward_pass_time  8.22, Average_Grad_time 3.63, Optimizer_step_time 0.91
+Finished epoch 72
+Finished training it 100/170 of epoch 73 and time taken 353.1579074859619, 20.37 ms/it, loss 0.270072, accuracy 87.928 %
+DLRM_wrap_time 7.33, loss_fn_time 0.20, Backward_pass_time  8.18, Average_Grad_time 3.58, Optimizer_step_time 0.90
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 73, loss 0.200392, accuracy 91.760 %, best 91.760 %
+Finished training it 170/170 of epoch 73 and time taken 355.2102038860321, 20.53 ms/it, loss 0.264350, accuracy 88.305 %
+DLRM_wrap_time 7.37, loss_fn_time 0.20, Backward_pass_time  8.19, Average_Grad_time 3.68, Optimizer_step_time 0.90
+Finished epoch 73
+Finished training it 100/170 of epoch 74 and time taken 357.84032464027405, 20.41 ms/it, loss 0.269600, accuracy 88.014 %
+DLRM_wrap_time 7.39, loss_fn_time 0.20, Backward_pass_time  8.14, Average_Grad_time 3.60, Optimizer_step_time 0.90
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 74, loss 0.343583, accuracy 84.129 %, best 91.760 %
+Finished training it 170/170 of epoch 74 and time taken 359.9045612812042, 20.64 ms/it, loss 0.265747, accuracy 88.268 %
+DLRM_wrap_time 7.37, loss_fn_time 0.20, Backward_pass_time  8.13, Average_Grad_time 3.85, Optimizer_step_time 0.91
+Finished epoch 74
+Finished training it 100/170 of epoch 75 and time taken 362.5488362312317, 20.51 ms/it, loss 0.265198, accuracy 88.221 %
+DLRM_wrap_time 7.39, loss_fn_time 0.20, Backward_pass_time  8.17, Average_Grad_time 3.65, Optimizer_step_time 0.91
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 75, loss 0.212997, accuracy 91.198 %, best 91.760 %
+Finished training it 170/170 of epoch 75 and time taken 364.6729130744934, 21.09 ms/it, loss 0.258908, accuracy 88.604 %
+DLRM_wrap_time 7.72, loss_fn_time 0.22, Backward_pass_time  8.27, Average_Grad_time 3.75, Optimizer_step_time 0.94
+Finished epoch 75
+Finished training it 100/170 of epoch 76 and time taken 367.3681285381317, 20.88 ms/it, loss 0.261077, accuracy 88.225 %
+DLRM_wrap_time 7.72, loss_fn_time 0.22, Backward_pass_time  8.24, Average_Grad_time 3.57, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 76, loss 0.266759, accuracy 87.625 %, best 91.760 %
+Finished training it 170/170 of epoch 76 and time taken 369.4928238391876, 21.08 ms/it, loss 0.254821, accuracy 88.347 %
+DLRM_wrap_time 7.75, loss_fn_time 0.22, Backward_pass_time  8.23, Average_Grad_time 3.73, Optimizer_step_time 0.95
+Finished epoch 76
+Finished training it 100/170 of epoch 77 and time taken 372.1948311328888, 20.96 ms/it, loss 0.262142, accuracy 87.834 %
+DLRM_wrap_time 7.71, loss_fn_time 0.22, Backward_pass_time  8.28, Average_Grad_time 3.62, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 77, loss 0.219847, accuracy 91.521 %, best 91.760 %
+Finished training it 170/170 of epoch 77 and time taken 374.31510615348816, 21.21 ms/it, loss 0.258689, accuracy 88.717 %
+DLRM_wrap_time 7.81, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 3.86, Optimizer_step_time 0.93
+Finished epoch 77
+Finished training it 100/170 of epoch 78 and time taken 376.97089171409607, 20.65 ms/it, loss 0.268170, accuracy 87.834 %
+DLRM_wrap_time 7.54, loss_fn_time 0.20, Backward_pass_time  8.22, Average_Grad_time 3.58, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 78, loss 0.297722, accuracy 85.653 %, best 91.760 %
+Finished training it 170/170 of epoch 78 and time taken 379.0579011440277, 20.76 ms/it, loss 0.266830, accuracy 87.888 %
+DLRM_wrap_time 7.53, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.69, Optimizer_step_time 0.93
+Finished epoch 78
+Finished training it 100/170 of epoch 79 and time taken 381.71582984924316, 20.66 ms/it, loss 0.265701, accuracy 87.680 %
+DLRM_wrap_time 7.53, loss_fn_time 0.20, Backward_pass_time  8.16, Average_Grad_time 3.66, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 79, loss 0.237351, accuracy 91.164 %, best 91.760 %
+Finished training it 170/170 of epoch 79 and time taken 383.81567788124084, 21.01 ms/it, loss 0.257758, accuracy 89.060 %
+DLRM_wrap_time 7.53, loss_fn_time 0.20, Backward_pass_time  8.19, Average_Grad_time 3.97, Optimizer_step_time 0.93
+Finished epoch 79
+Finished training it 100/170 of epoch 80 and time taken 386.48785972595215, 20.80 ms/it, loss 0.260652, accuracy 88.449 %
+DLRM_wrap_time 7.57, loss_fn_time 0.21, Backward_pass_time  8.18, Average_Grad_time 3.73, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 80, loss 0.258630, accuracy 87.999 %, best 91.760 %
+Finished training it 170/170 of epoch 80 and time taken 388.5810558795929, 20.81 ms/it, loss 0.261387, accuracy 88.651 %
+DLRM_wrap_time 7.55, loss_fn_time 0.21, Backward_pass_time  8.20, Average_Grad_time 3.74, Optimizer_step_time 0.93
+Finished epoch 80
+Finished training it 100/170 of epoch 81 and time taken 391.25381660461426, 20.77 ms/it, loss 0.268539, accuracy 87.949 %
+DLRM_wrap_time 7.59, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.63, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 81, loss 0.423246, accuracy 78.065 %, best 91.760 %
+Finished training it 170/170 of epoch 81 and time taken 393.35012555122375, 20.90 ms/it, loss 0.265050, accuracy 88.248 %
+DLRM_wrap_time 7.57, loss_fn_time 0.21, Backward_pass_time  8.15, Average_Grad_time 3.87, Optimizer_step_time 0.92
+Finished epoch 81
+Finished training it 100/170 of epoch 82 and time taken 396.01684498786926, 20.72 ms/it, loss 0.270004, accuracy 88.041 %
+DLRM_wrap_time 7.54, loss_fn_time 0.20, Backward_pass_time  8.17, Average_Grad_time 3.69, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 82, loss 0.198332, accuracy 91.599 %, best 91.760 %
+Finished training it 170/170 of epoch 82 and time taken 398.115496635437, 20.90 ms/it, loss 0.252852, accuracy 88.065 %
+DLRM_wrap_time 7.61, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.77, Optimizer_step_time 0.93
+Finished epoch 82
+Finished training it 100/170 of epoch 83 and time taken 400.7851548194885, 20.74 ms/it, loss 0.265223, accuracy 88.213 %
+DLRM_wrap_time 7.57, loss_fn_time 0.20, Backward_pass_time  8.21, Average_Grad_time 3.64, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 83, loss 0.202935, accuracy 92.276 %, best 92.276 %
+Finished training it 170/170 of epoch 83 and time taken 402.88415789604187, 20.90 ms/it, loss 0.274023, accuracy 88.106 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.73, Optimizer_step_time 0.93
+Finished epoch 83
+Finished training it 100/170 of epoch 84 and time taken 405.5412566661835, 20.65 ms/it, loss 0.268402, accuracy 87.914 %
+DLRM_wrap_time 7.55, loss_fn_time 0.21, Backward_pass_time  8.18, Average_Grad_time 3.60, Optimizer_step_time 0.92
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 84, loss 0.280441, accuracy 85.293 %, best 92.276 %
+Finished training it 170/170 of epoch 84 and time taken 407.6232135295868, 20.72 ms/it, loss 0.272097, accuracy 87.708 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.57, Optimizer_step_time 0.93
+Finished epoch 84
+Finished training it 100/170 of epoch 85 and time taken 410.2927281856537, 20.72 ms/it, loss 0.275547, accuracy 87.766 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.56, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 85, loss 0.242588, accuracy 88.840 %, best 92.276 %
+Finished training it 170/170 of epoch 85 and time taken 412.37618231773376, 20.74 ms/it, loss 0.265334, accuracy 88.366 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.60, Optimizer_step_time 0.93
+Finished epoch 85
+Finished training it 100/170 of epoch 86 and time taken 415.0550026893616, 20.78 ms/it, loss 0.257635, accuracy 87.893 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.58, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 86, loss 0.210228, accuracy 90.469 %, best 92.276 %
+Finished training it 170/170 of epoch 86 and time taken 417.1595151424408, 20.92 ms/it, loss 0.267984, accuracy 88.164 %
+DLRM_wrap_time 7.68, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.64, Optimizer_step_time 0.93
+Finished epoch 86
+Finished training it 100/170 of epoch 87 and time taken 419.8443281650543, 20.83 ms/it, loss 0.269236, accuracy 88.469 %
+DLRM_wrap_time 7.65, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.63, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 87, loss 0.317620, accuracy 82.443 %, best 92.276 %
+Finished training it 170/170 of epoch 87 and time taken 421.9478220939636, 20.85 ms/it, loss 0.265479, accuracy 87.549 %
+DLRM_wrap_time 7.64, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.62, Optimizer_step_time 0.94
+Finished epoch 87
+Finished training it 100/170 of epoch 88 and time taken 424.6339075565338, 20.89 ms/it, loss 0.267924, accuracy 88.072 %
+DLRM_wrap_time 7.65, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.64, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 88, loss 0.295227, accuracy 85.657 %, best 92.276 %
+Finished training it 170/170 of epoch 88 and time taken 426.72962617874146, 20.87 ms/it, loss 0.266030, accuracy 88.477 %
+DLRM_wrap_time 7.63, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.66, Optimizer_step_time 0.93
+Finished epoch 88
+Finished training it 100/170 of epoch 89 and time taken 429.4126925468445, 20.82 ms/it, loss 0.266425, accuracy 88.494 %
+DLRM_wrap_time 7.65, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.61, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 89, loss 0.202354, accuracy 90.831 %, best 92.276 %
+Finished training it 170/170 of epoch 89 and time taken 431.52129340171814, 20.91 ms/it, loss 0.258954, accuracy 88.019 %
+DLRM_wrap_time 7.78, loss_fn_time 0.22, Backward_pass_time  8.20, Average_Grad_time 3.57, Optimizer_step_time 0.95
+Finished epoch 89
+Finished training it 100/170 of epoch 90 and time taken 434.21470165252686, 20.93 ms/it, loss 0.258552, accuracy 88.535 %
+DLRM_wrap_time 7.68, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.66, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 90, loss 0.196728, accuracy 92.646 %, best 92.646 %
+Finished training it 170/170 of epoch 90 and time taken 436.30476570129395, 20.82 ms/it, loss 0.262836, accuracy 88.093 %
+DLRM_wrap_time 7.66, loss_fn_time 0.21, Backward_pass_time  8.21, Average_Grad_time 3.63, Optimizer_step_time 0.93
+Finished epoch 90
+Finished training it 100/170 of epoch 91 and time taken 438.98030495643616, 20.80 ms/it, loss 0.260715, accuracy 88.082 %
+DLRM_wrap_time 7.59, loss_fn_time 0.22, Backward_pass_time  8.27, Average_Grad_time 3.59, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 91, loss 0.196480, accuracy 92.538 %, best 92.646 %
+Finished training it 170/170 of epoch 91 and time taken 441.0688319206238, 20.84 ms/it, loss 0.262325, accuracy 88.607 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.65, Optimizer_step_time 0.94
+Finished epoch 91
+Finished training it 100/170 of epoch 92 and time taken 443.7569525241852, 20.85 ms/it, loss 0.255963, accuracy 88.754 %
+DLRM_wrap_time 7.61, loss_fn_time 0.21, Backward_pass_time  8.27, Average_Grad_time 3.64, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 92, loss 0.186996, accuracy 92.644 %, best 92.646 %
+Finished training it 170/170 of epoch 92 and time taken 445.8525996208191, 20.88 ms/it, loss 0.257248, accuracy 88.803 %
+DLRM_wrap_time 7.64, loss_fn_time 0.22, Backward_pass_time  8.25, Average_Grad_time 3.64, Optimizer_step_time 0.94
+Finished epoch 92
+Finished training it 100/170 of epoch 93 and time taken 448.5325608253479, 20.82 ms/it, loss 0.258833, accuracy 88.775 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.63, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 93, loss 0.343214, accuracy 83.713 %, best 92.646 %
+Finished training it 170/170 of epoch 93 and time taken 450.62791085243225, 20.76 ms/it, loss 0.244918, accuracy 88.353 %
+DLRM_wrap_time 7.57, loss_fn_time 0.21, Backward_pass_time  8.23, Average_Grad_time 3.63, Optimizer_step_time 0.94
+Finished epoch 93
+Finished training it 100/170 of epoch 94 and time taken 453.308895111084, 20.83 ms/it, loss 0.252205, accuracy 88.605 %
+DLRM_wrap_time 7.58, loss_fn_time 0.21, Backward_pass_time  8.24, Average_Grad_time 3.68, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 94, loss 0.256177, accuracy 87.848 %, best 92.646 %/users/ushmal/.local/lib/python3.6/site-packages/torch/distributed/distributed_c10d.py:101: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn("torch.distributed.reduce_op is deprecated, please use "
+
+Finished training it 170/170 of epoch 94 and time taken 455.39275455474854, 20.75 ms/it, loss 0.247074, accuracy 89.278 %
+DLRM_wrap_time 7.61, loss_fn_time 0.21, Backward_pass_time  8.18, Average_Grad_time 3.63, Optimizer_step_time 0.93
+Finished epoch 94
+Finished training it 100/170 of epoch 95 and time taken 458.073832988739, 20.83 ms/it, loss 0.250157, accuracy 89.266 %
+DLRM_wrap_time 7.59, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.66, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 95, loss 0.191169, accuracy 92.754 %, best 92.754 %
+Finished training it 170/170 of epoch 95 and time taken 460.16786098480225, 20.86 ms/it, loss 0.240703, accuracy 89.038 %
+DLRM_wrap_time 7.63, loss_fn_time 0.22, Backward_pass_time  8.26, Average_Grad_time 3.63, Optimizer_step_time 0.93
+Finished epoch 95
+Finished training it 100/170 of epoch 96 and time taken 462.8537018299103, 20.87 ms/it, loss 0.249125, accuracy 88.984 %
+DLRM_wrap_time 7.62, loss_fn_time 0.21, Backward_pass_time  8.27, Average_Grad_time 3.65, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 96, loss 0.203543, accuracy 91.161 %, best 92.754 %
+Finished training it 170/170 of epoch 96 and time taken 464.941650390625, 20.76 ms/it, loss 0.246688, accuracy 88.897 %
+DLRM_wrap_time 7.61, loss_fn_time 0.22, Backward_pass_time  8.18, Average_Grad_time 3.63, Optimizer_step_time 0.94
+Finished epoch 96
+Finished training it 100/170 of epoch 97 and time taken 467.61887526512146, 20.74 ms/it, loss 0.254090, accuracy 88.908 %
+DLRM_wrap_time 7.64, loss_fn_time 0.21, Backward_pass_time  8.12, Average_Grad_time 3.65, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 97, loss 0.250314, accuracy 87.951 %, best 92.754 %
+Finished training it 170/170 of epoch 97 and time taken 469.6837034225464, 20.36 ms/it, loss 0.246309, accuracy 89.026 %
+DLRM_wrap_time 7.63, loss_fn_time 0.22, Backward_pass_time  7.79, Average_Grad_time 3.61, Optimizer_step_time 0.93
+Finished epoch 97
+Finished training it 100/170 of epoch 98 and time taken 472.3549451828003, 20.76 ms/it, loss 0.260764, accuracy 88.625 %
+DLRM_wrap_time 7.57, loss_fn_time 0.21, Backward_pass_time  8.22, Average_Grad_time 3.64, Optimizer_step_time 0.93
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 98, loss 0.196890, accuracy 92.566 %, best 92.754 %
+Finished training it 170/170 of epoch 98 and time taken 474.4525144100189, 20.84 ms/it, loss 0.237198, accuracy 89.356 %
+DLRM_wrap_time 7.65, loss_fn_time 0.21, Backward_pass_time  8.25, Average_Grad_time 3.61, Optimizer_step_time 0.93
+Finished epoch 98
+Finished training it 100/170 of epoch 99 and time taken 477.14037561416626, 20.87 ms/it, loss 0.244877, accuracy 89.096 %
+DLRM_wrap_time 7.65, loss_fn_time 0.22, Backward_pass_time  8.23, Average_Grad_time 3.65, Optimizer_step_time 0.94
+Starting Test loop
+Test loop ended
+Testing at - 100/170 of epoch 99, loss 0.207146, accuracy 91.038 %, best 92.754 %
+Finished training it 170/170 of epoch 99 and time taken 479.22981333732605, 20.83 ms/it, loss 0.239692, accuracy 89.463 %
+DLRM_wrap_time 7.60, loss_fn_time 0.21, Backward_pass_time  8.26, Average_Grad_time 3.65, Optimizer_step_time 0.93
+Finished epoch 99
+Finished the program
