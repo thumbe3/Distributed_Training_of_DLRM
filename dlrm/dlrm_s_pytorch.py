@@ -1188,7 +1188,8 @@ if __name__ == "__main__":
         onnx.checker.check_model(dlrm_pytorch_onnx)
 
 import pickle
-out=open("emb"+str(rank)+".pickle", "wb")
+out=open("emb"+str(rank)+"_part.pickle", "wb")
+
 pickle.dump(embed_global, out)
 
 print("Finished the program")
