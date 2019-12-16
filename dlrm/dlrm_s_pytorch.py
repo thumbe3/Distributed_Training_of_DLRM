@@ -1,4 +1,4 @@
-# Copyright (c) Facebook, Inc. and its affiliates.
+#ll Copyright (c) Facebook, Inc. and its affiliates.
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
@@ -91,6 +91,8 @@ from random import Random
 # from torch.nn.parameter import Parameter
 
 exc = getattr(builtins, "IOError", "FileNotFoundError")
+embed_global = []
+
 
 #### GPU Utilization ###############
 class Monitor(Thread):
@@ -478,11 +480,19 @@ def average_gradients(dlrm, group, async_op):
     size = float(dist.get_world_size())
     for name,param in dlrm.named_parameters():
         if 'emb_l' in name:
-            #print(param.data)
             continue
+            #print(param.data)
         dist.all_reduce(param.grad.data, op=dist.reduce_op.SUM, group=group, async_op=async_op)
         param.grad.data /= size
         #print (param.grad.data)
+
+def save_embed(dlrm):
+    for name,param in dlrm.named_parameters():
+        if 'emb_l' in name:
+            emb_arr.append((name,param))
+    embed_global.append(emb_arr)
+
+
 
 if __name__ == "__main__":
     ### import packages ###
@@ -966,6 +976,7 @@ if __name__ == "__main__":
     start_time = time.time()
     with torch.autograd.profiler.profile(args.enable_profiling,use_cuda=False) as prof:
         while k < args.nepochs:
+            save_embed(dlrm)
             for j, (X, lS_o, lS_i, T) in enumerate(train_loader):
                 #torch.cuda.empty_cache()
                 # early exit if nbatches was set by the user and has been exceeded
@@ -1176,4 +1187,9 @@ if __name__ == "__main__":
         # check the onnx model
         onnx.checker.check_model(dlrm_pytorch_onnx)
     monitor.stop()
+
+import pickle
+out=open("emb"+str(rank)+".pickle")
+pickle.dump(embed_global, out)
+
 print("Finished the program")
