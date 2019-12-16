@@ -1122,8 +1122,8 @@ if __name__ == "__main__":
                     is_best = gA_test > best_gA_test
                     if is_best:
                         best_gA_test = gA_test
-			if not (args.save_model == ""):
-			print("Saving model to {}".format(args.save_model))
+                        if not (args.save_model == ""):
+			    print("Saving model to {}".format(args.save_model))
                             torch.save(
                                 {
                                     "epoch": k,
